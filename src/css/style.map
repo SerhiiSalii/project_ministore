@@ -5,8 +5,8 @@
 		"../sass/style.sass"
 	],
 	"sourcesContent": [
-		"h1 {\n    color: pink; }\n"
+		"$color-black: #272727;\n$color-blue: #72AEC8;\n$color-gray: #EDF1F3;\n\nhtml {\n    font-size: 62.5%; }\n\nbody {\n    font-family: \"Lato\", sans-serif; }\n\n.header {\n    // max-width: 192rem\n    padding: 1.4rem 31rem;\n    display: grid;\n    grid-template-columns: 50% 1fr 1fr;\n    align-items: center;\n    &__icons {\n        display: flex;\n        gap: 2rem;\n        justify-self: end; } }\n\n.navigation {\n    display: flex;\n    list-style: none;\n    align-items: center;\n    &__item {\n        font-size: 1.4rem;\n        text-transform: uppercase;\n        &:not(:last-child) {\n            margin-right: 4.4rem; } }\n    &__link {\n        // letter-spacing: .1rem\n        text-decoration: none;\n        &:active, &:visited {\n            color: $color-black; }\n        &:hover {\n            color: $color-blue; } } }\n\n\n.main-section {\n    &__body {\n        background: $color-gray; } }\n\n\n\n"
 	],
 	"names": [],
-	"mappings": ";AAAA,AAAA,EAAE,CAAC;EACC,KAAK,EAAE,IAAI;CAAG"
+	"mappings": ";AAIA,AAAA,IAAI,CAAC;EACD,SAAS,EAAE,KAAK;CAAG;;;AAEvB,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,kBAAkB;CAAG;;;AAEtC,AAAA,OAAO,CAAC;EAEJ,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,WAAW;EAClC,WAAW,EAAE,MAAM;CAIO;;;AAHzB,AAAD,cAAQ,CAAC;EACL,OAAO,EAAE,IAAI;EACb,GAAG,EAAE,IAAI;EACT,YAAY,EAAE,GAAG;CAAG;;;AAE5B,AAAA,WAAW,CAAC;EACR,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,MAAM;CAYc;;;AAXhC,AAAD,iBAAO,CAAC;EACJ,SAAS,EAAE,MAAM;EACjB,cAAc,EAAE,SAAS;CAEI;;;AAJhC,AAGG,iBAHG,AAGF,IAAK,CAAA,WAAW,EAAE;EACf,YAAY,EAAE,MAAM;CAAG;;;AAC9B,AAAD,iBAAO,CAAC;EAEJ,eAAe,EAAE,IAAI;CAIM;;;AAN9B,AAGG,iBAHG,AAGF,OAAO,EAHX,iBAAM,AAGQ,QAAQ,CAAC;EAChB,KAAK,EAlCH,OAAO;CAkCa;;;AAJ7B,AAKG,iBALG,AAKF,MAAM,CAAC;EACJ,KAAK,EAnCJ,OAAO;CAmCa;;;AAI5B,AAAD,mBAAO,CAAC;EACJ,UAAU,EAvCL,OAAO;CAuCc"
 }

@@ -1,6 +1,64 @@
-/* line 1, ../../../Desktop/project_ministore/src/sass/style.sass */
-h1 {
-  color: pink;
+/* line 5, ../../../Desktop/project_ministore/src/sass/style.sass */
+html {
+  font-size: 62.5%;
+}
+
+/* line 8, ../../../Desktop/project_ministore/src/sass/style.sass */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* line 11, ../../../Desktop/project_ministore/src/sass/style.sass */
+.header {
+  padding: 1.4rem 31rem;
+  display: grid;
+  grid-template-columns: 50% 1fr 1fr;
+  align-items: center;
+}
+
+/* line 17, ../../../Desktop/project_ministore/src/sass/style.sass */
+.header__icons {
+  display: flex;
+  gap: 2rem;
+  justify-self: end;
+}
+
+/* line 22, ../../../Desktop/project_ministore/src/sass/style.sass */
+.navigation {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+/* line 26, ../../../Desktop/project_ministore/src/sass/style.sass */
+.navigation__item {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+/* line 29, ../../../Desktop/project_ministore/src/sass/style.sass */
+.navigation__item:not(:last-child) {
+  margin-right: 4.4rem;
+}
+
+/* line 31, ../../../Desktop/project_ministore/src/sass/style.sass */
+.navigation__link {
+  text-decoration: none;
+}
+
+/* line 34, ../../../Desktop/project_ministore/src/sass/style.sass */
+.navigation__link:active, .navigation__link:visited {
+  color: #272727;
+}
+
+/* line 36, ../../../Desktop/project_ministore/src/sass/style.sass */
+.navigation__link:hover {
+  color: #72AEC8;
+}
+
+/* line 41, ../../../Desktop/project_ministore/src/sass/style.sass */
+.main-section__body {
+  background: #EDF1F3;
 }
 
 /*# sourceMappingURL=style.css.map */
