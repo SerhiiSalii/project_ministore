@@ -1,14 +1,20 @@
-/* line 5, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 6, ../../../Desktop/project_ministore/src/sass/style.sass */
 html {
   font-size: 62.5%;
 }
 
-/* line 8, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 9, ../../../Desktop/project_ministore/src/sass/style.sass */
 body {
   font-family: "Lato", sans-serif;
 }
 
-/* line 11, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 12, ../../../Desktop/project_ministore/src/sass/style.sass */
+.container {
+  padding: 0rem 31rem;
+  box-sizing: border-box;
+}
+
+/* line 16, ../../../Desktop/project_ministore/src/sass/style.sass */
 .header {
   padding: 1.4rem 31rem;
   display: grid;
@@ -16,49 +22,102 @@ body {
   align-items: center;
 }
 
-/* line 17, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 22, ../../../Desktop/project_ministore/src/sass/style.sass */
 .header__icons {
   display: flex;
   gap: 2rem;
   justify-self: end;
 }
 
-/* line 22, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 27, ../../../Desktop/project_ministore/src/sass/style.sass */
 .navigation {
   display: flex;
   list-style: none;
   align-items: center;
+  position: relative;
+  z-index: 100;
 }
 
-/* line 26, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 33, ../../../Desktop/project_ministore/src/sass/style.sass */
 .navigation__item {
   font-size: 1.4rem;
   text-transform: uppercase;
 }
 
-/* line 29, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 36, ../../../Desktop/project_ministore/src/sass/style.sass */
 .navigation__item:not(:last-child) {
   margin-right: 4.4rem;
 }
 
-/* line 31, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 38, ../../../Desktop/project_ministore/src/sass/style.sass */
 .navigation__link {
   text-decoration: none;
+  transition: all .3s;
 }
 
-/* line 34, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 42, ../../../Desktop/project_ministore/src/sass/style.sass */
 .navigation__link:active, .navigation__link:visited {
   color: #272727;
 }
 
-/* line 36, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 44, ../../../Desktop/project_ministore/src/sass/style.sass */
 .navigation__link:hover {
   color: #72AEC8;
 }
 
-/* line 41, ../../../Desktop/project_ministore/src/sass/style.sass */
-.main-section__body {
+/* line 49, ../../../Desktop/project_ministore/src/sass/style.sass */
+.main-section__container {
   background: #EDF1F3;
+  padding: 10rem 31rem;
+  position: relative;
+  min-height: 61rem;
+}
+
+/* line 57, ../../../Desktop/project_ministore/src/sass/style.sass */
+.main-section__img {
+  position: absolute;
+  right: 25rem;
+  top: -7rem;
+  transition: all .3s;
+}
+
+/* line 62, ../../../Desktop/project_ministore/src/sass/style.sass */
+.main-section__img:hover {
+  transform: scale(1.05);
+}
+
+/* line 65, ../../../Desktop/project_ministore/src/sass/style.sass */
+.title {
+  font-size: 8.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 69, ../../../Desktop/project_ministore/src/sass/style.sass */
+.title_main {
+  width: 60%;
+}
+
+/* line 72, ../../../Desktop/project_ministore/src/sass/style.sass */
+.btn {
+  display: inline-block;
+  background-color: #272727;
+  padding: 1.6rem 5rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: all .5s;
+}
+
+/* line 81, ../../../Desktop/project_ministore/src/sass/style.sass */
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* line 83, ../../../Desktop/project_ministore/src/sass/style.sass */
+.btn:active {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

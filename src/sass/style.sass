@@ -1,12 +1,17 @@
 $color-black: #272727
 $color-blue: #72AEC8
 $color-gray: #EDF1F3
+$color-white: #FFFFFF
 
 html
     font-size: 62.5%
 
 body 
     font-family: "Lato", sans-serif
+
+.container
+    padding: 0rem 31rem
+    box-sizing: border-box
 
 .header
     // max-width: 192rem
@@ -23,6 +28,8 @@ body
     display: flex
     list-style: none
     align-items: center
+    position: relative
+    z-index: 100
     &__item
         font-size: 1.4rem
         text-transform: uppercase
@@ -31,6 +38,7 @@ body
     &__link
         // letter-spacing: .1rem
         text-decoration: none
+        transition: all .3s
         &:active, &:visited
             color: $color-black
         &:hover
@@ -38,8 +46,43 @@ body
 
 
 .main-section
-    &__body
+    &__container
         background: $color-gray
+        padding: 10rem 31rem
+        position: relative
+        min-height: 61rem
 
-            
+    &__title
+
+    &__img
+        position: absolute
+        right: 25rem
+        top: -7rem
+        transition: all .3s
+        &:hover
+            transform: scale(1.05)
+
+.title
+    font-size: 8.3rem
+    font-weight: 300
+    text-transform: uppercase
+    &_main
+        width: 60%
+
+.btn
+    display: inline-block
+    background-color: $color-black
+    padding: 1.6rem 5rem
+    color: $color-white
+    text-transform: uppercase
+    text-decoration: none
+    font-size: 1.4rem
+    transition: all .5s
+    &:hover
+        transform: scale(1.1)
+    &:active
+        display: none
+
+
+
 
