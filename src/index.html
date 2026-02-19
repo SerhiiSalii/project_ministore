@@ -16,11 +16,14 @@
             <img src="img/MiniStore_logo.png" alt="" class="header__img">
         </a>
         <nav class="navigation">
-            <li class="navigation__item"><a href="#" class="navigation__link">home</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">pages</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">about</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">blogs</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">contact</a></li>
+            <ul class="navigation__menu">
+                <li class="navigation__item"><a href="#" class="navigation__link">home</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">pages</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">about</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">blogs</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">contact</a></li>
+            </ul>
+            
         </nav>
         <div class="header__icons">
             <img src="icons/glass.svg" alt="#">
@@ -41,12 +44,40 @@
             </div>
         </section>
         <section class="showcase">
-            <div class="advantages">
-                <div class="advantages__card"></div>
-                <div class="advantages__card"></div>
-                <div class="advantages__card"></div>
-                <div class="advantages__card"></div>
+            <div class="showcase__container container">
+                <div class="advantages">
+                    <div class="advantages__card">
+                        <img src="icons/cart-blue.svg" alt="cart" class="advantages__img">
+                        <h3 class="advantages__title">Free delivery</h3>
+                        <p class="advantages__text">
+                            Consectetur adipi elit lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div class="advantages__card">
+                        <img src="icons/prize.svg" alt="prize" class="advantages__img">
+                        <h3 class="advantages__title">Quality guarantee</h3>
+                        <p class="advantages__text">
+                            Consectetur adipi elit lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div class="advantages__card">
+                        <img src="icons/label.svg" alt="label" class="advantages__img">
+                        <h3 class="advantages__title">Daily offers</h3>
+                        <p class="advantages__text">
+                            Consectetur adipi elit lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div class="advantages__card">
+                        <img src="icons/shield.svg" alt="shield" class="advantages__img">
+                        <h3 class="advantages__title">100% secure payment</h3>
+                        <p class="advantages__text">
+                            Consectetur adipi elit lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                </div>
             </div>
+            
+
             <div class="product-offers">
                 <div class="product-offers__title">
                     <h3></h3>
@@ -75,7 +106,7 @@
         <section class="discount-offer">
             <p></p>
             <h2></h2>
-            <a href="" class="btn"></a>
+            <!-- <a href="" class="btn"></a> -->
             <img src="" alt="">
         </section>
         <section class="related-posts">
