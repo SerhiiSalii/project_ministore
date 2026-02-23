@@ -1,20 +1,20 @@
-/* line 7, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 8, ../../../Desktop/project_ministore/src/sass/style.sass */
 html {
   font-size: 62.5%;
 }
 
-/* line 10, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 11, ../../../Desktop/project_ministore/src/sass/style.sass */
 body {
   font-family: "Lato", sans-serif;
 }
 
-/* line 13, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 14, ../../../Desktop/project_ministore/src/sass/style.sass */
 .container {
   padding: 0rem 31rem;
   box-sizing: border-box;
 }
 
-/* line 17, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 18, ../../../Desktop/project_ministore/src/sass/style.sass */
 .header {
   padding: 1.4rem 31rem;
   display: grid;
@@ -22,14 +22,14 @@ body {
   align-items: center;
 }
 
-/* line 23, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 24, ../../../Desktop/project_ministore/src/sass/style.sass */
 .header__icons {
   display: flex;
   gap: 2rem;
   justify-self: end;
 }
 
-/* line 28, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 29, ../../../Desktop/project_ministore/src/sass/style.sass */
 .navigation {
   display: flex;
   list-style: none;
@@ -38,39 +38,39 @@ body {
   z-index: 100;
 }
 
-/* line 34, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 35, ../../../Desktop/project_ministore/src/sass/style.sass */
 .navigation__menu {
   display: flex;
 }
 
-/* line 36, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 37, ../../../Desktop/project_ministore/src/sass/style.sass */
 .navigation__item {
   font-size: 1.4rem;
   text-transform: uppercase;
 }
 
-/* line 39, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 40, ../../../Desktop/project_ministore/src/sass/style.sass */
 .navigation__item:not(:last-child) {
   margin-right: 4.4rem;
 }
 
-/* line 41, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 42, ../../../Desktop/project_ministore/src/sass/style.sass */
 .navigation__link {
   text-decoration: none;
   transition: all .3s;
 }
 
-/* line 45, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 46, ../../../Desktop/project_ministore/src/sass/style.sass */
 .navigation__link:active, .navigation__link:visited {
   color: #272727;
 }
 
-/* line 47, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 48, ../../../Desktop/project_ministore/src/sass/style.sass */
 .navigation__link:hover {
   color: #72AEC8;
 }
 
-/* line 52, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 53, ../../../Desktop/project_ministore/src/sass/style.sass */
 .main-section__container {
   background: #EDF1F3;
   padding: 10rem 31rem;
@@ -78,7 +78,7 @@ body {
   min-height: 61rem;
 }
 
-/* line 60, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 61, ../../../Desktop/project_ministore/src/sass/style.sass */
 .main-section__img {
   position: absolute;
   right: 25rem;
@@ -86,24 +86,24 @@ body {
   transition: all .3s;
 }
 
-/* line 65, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 66, ../../../Desktop/project_ministore/src/sass/style.sass */
 .main-section__img:hover {
   transform: scale(1.05);
 }
 
-/* line 68, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 69, ../../../Desktop/project_ministore/src/sass/style.sass */
 .title {
   font-size: 8.3rem;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-/* line 72, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 73, ../../../Desktop/project_ministore/src/sass/style.sass */
 .title_main {
   width: 60%;
 }
 
-/* line 75, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 76, ../../../Desktop/project_ministore/src/sass/style.sass */
 .btn {
   display: inline-block;
   background-color: #272727;
@@ -115,17 +115,17 @@ body {
   transition: all .3s;
 }
 
-/* line 84, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 85, ../../../Desktop/project_ministore/src/sass/style.sass */
 .btn:hover {
   transform: scale(1.1);
 }
 
-/* line 86, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 87, ../../../Desktop/project_ministore/src/sass/style.sass */
 .btn:active {
   display: none;
 }
 
-/* line 92, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 93, ../../../Desktop/project_ministore/src/sass/style.sass */
 .advantages {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -133,14 +133,14 @@ body {
   gap: 0 5.5rem;
 }
 
-/* line 97, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 98, ../../../Desktop/project_ministore/src/sass/style.sass */
 .advantages__card {
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: .5rem 1.5rem;
 }
 
-/* line 101, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 102, ../../../Desktop/project_ministore/src/sass/style.sass */
 .advantages__title {
   font-size: 2rem;
   text-transform: uppercase;
@@ -148,7 +148,7 @@ body {
   letter-spacing: 6%;
 }
 
-/* line 106, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 107, ../../../Desktop/project_ministore/src/sass/style.sass */
 .advantages__text {
   font-size: 1.6rem;
   color: #3A3A3A;
@@ -157,40 +157,40 @@ body {
   letter-spacing: 3%;
 }
 
-/* line 112, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 113, ../../../Desktop/project_ministore/src/sass/style.sass */
 .advantages__img {
   grid-row: 1 / span 2;
   transform: translateY(-0.5rem);
 }
 
-/* line 117, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 118, ../../../Desktop/project_ministore/src/sass/style.sass */
 .shop-offers {
   display: grid;
   grid-template-rows: min-content 1fr;
-  grid-template-columns: repeat(4, min-content);
+  grid-template-columns: repeat(4, max-content);
   grid-gap: 3rem 2rem;
   margin: 12rem 0;
 }
 
-/* line 123, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 124, ../../../Desktop/project_ministore/src/sass/style.sass */
 .shop-offers__title {
   grid-column: 1 / -1;
 }
 
-/* line 125, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 126, ../../../Desktop/project_ministore/src/sass/style.sass */
 .shop-offers__text {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 128, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 129, ../../../Desktop/project_ministore/src/sass/style.sass */
 .shop-offers__name {
   font-size: 2rem;
   text-transform: uppercase;
   display: inline-block;
 }
 
-/* line 132, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 133, ../../../Desktop/project_ministore/src/sass/style.sass */
 .shop-offers__price {
   display: inline-block;
   font-size: 2rem;
@@ -198,18 +198,18 @@ body {
   letter-spacing: 3%;
 }
 
-/* line 137, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 138, ../../../Desktop/project_ministore/src/sass/style.sass */
 .shop-offers__img-box {
   position: relative;
   margin-bottom: 1rem;
 }
 
-/* line 141, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 142, ../../../Desktop/project_ministore/src/sass/style.sass */
 .shop-offers__img-box:hover .shop-offers__cart-btn {
   opacity: 1;
 }
 
-/* line 143, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 144, ../../../Desktop/project_ministore/src/sass/style.sass */
 .shop-offers__cart-btn {
   border: none;
   background-color: #272727;
@@ -226,7 +226,7 @@ body {
   transition: all 0.8s ease;
 }
 
-/* line 157, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 158, ../../../Desktop/project_ministore/src/sass/style.sass */
 .shop-offers__cart-btn::after {
   content: "";
   position: absolute;
@@ -238,13 +238,13 @@ body {
   background: url("../icons/cart-button.svg") center/contain no-repeat;
 }
 
-/* line 169, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 170, ../../../Desktop/project_ministore/src/sass/style.sass */
 .title-h3 {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 172, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 173, ../../../Desktop/project_ministore/src/sass/style.sass */
 .title-h3__heading {
   font-size: 3rem;
   letter-spacing: 6%;
@@ -252,12 +252,12 @@ body {
   text-transform: uppercase;
 }
 
-/* line 177, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 178, ../../../Desktop/project_ministore/src/sass/style.sass */
 .title-h3__link {
   position: relative;
 }
 
-/* line 179, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 180, ../../../Desktop/project_ministore/src/sass/style.sass */
 .title-h3__link:visited, .title-h3__link:link {
   color: #272727;
   font-size: 1.4rem;
@@ -266,7 +266,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 185, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 186, ../../../Desktop/project_ministore/src/sass/style.sass */
 .title-h3__link::after {
   content: '';
   position: absolute;
@@ -278,9 +278,177 @@ body {
   transition: all .6s ease;
 }
 
-/* line 194, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 195, ../../../Desktop/project_ministore/src/sass/style.sass */
 .title-h3__link:hover::after {
   background-color: #FFFFFF;
+}
+
+/* line 199, ../../../Desktop/project_ministore/src/sass/style.sass */
+.discount-offer__container {
+  background-color: #EDF1F3;
+  position: relative;
+  min-height: 70rem;
+}
+
+/* line 203, ../../../Desktop/project_ministore/src/sass/style.sass */
+.discount-offer__info {
+  padding: 22rem 0 22rem 11rem;
+}
+
+/* line 205, ../../../Desktop/project_ministore/src/sass/style.sass */
+.discount-offer__subtitle {
+  font-size: 3rem;
+  letter-spacing: 16%;
+  text-transform: uppercase;
+  margin-bottom: 2.8rem;
+  padding-left: 5rem;
+  position: relative;
+}
+
+/* line 212, ../../../Desktop/project_ministore/src/sass/style.sass */
+.discount-offer__subtitle::before {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 0rem;
+  width: 3%;
+  height: .1rem;
+  background-color: #272727;
+  transform: translateY(50%);
+}
+
+/* line 221, ../../../Desktop/project_ministore/src/sass/style.sass */
+.discount-offer__img {
+  position: absolute;
+  right: -22rem;
+  bottom: -6.5rem;
+}
+
+/* line 225, ../../../Desktop/project_ministore/src/sass/style.sass */
+.discount-offer__title {
+  margin-bottom: 4.5rem;
+}
+
+/* line 228, ../../../Desktop/project_ministore/src/sass/style.sass */
+.title-h2 {
+  text-transform: uppercase;
+  letter-spacing: 2%;
+  font-size: 8.3rem;
+}
+
+/* line 234, ../../../Desktop/project_ministore/src/sass/style.sass */
+.related-posts__container {
+  margin: 12rem 0;
+}
+
+/* line 236, ../../../Desktop/project_ministore/src/sass/style.sass */
+.related-posts__title {
+  margin-bottom: 3rem;
+}
+
+/* line 238, ../../../Desktop/project_ministore/src/sass/style.sass */
+.related-posts__img {
+  margin-bottom: 1.4rem;
+}
+
+/* line 240, ../../../Desktop/project_ministore/src/sass/style.sass */
+.related-posts__content {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-gap: 2rem;
+}
+
+/* line 244, ../../../Desktop/project_ministore/src/sass/style.sass */
+.related-posts__content p {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: #848484;
+  text-transform: uppercase;
+  letter-spacing: 6%;
+  margin-bottom: .6rem;
+  position: relative;
+}
+
+/* line 252, ../../../Desktop/project_ministore/src/sass/style.sass */
+.related-posts__content p:not(:last-child)::after {
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  content: "";
+  height: .3rem;
+  width: .3rem;
+  background-color: #848484;
+}
+
+/* line 262, ../../../Desktop/project_ministore/src/sass/style.sass */
+.related-posts__content p:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* line 266, ../../../Desktop/project_ministore/src/sass/style.sass */
+.related-posts__post-title:link, .related-posts__post-title:visited {
+  font-size: 2rem;
+  letter-spacing: 6%;
+  text-decoration: none;
+  color: #272727;
+  text-transform: uppercase;
+}
+
+/* line 272, ../../../Desktop/project_ministore/src/sass/style.sass */
+.related-posts__post-title:hover {
+  opacity: 0.8;
+}
+
+/* line 279, ../../../Desktop/project_ministore/src/sass/style.sass */
+.blockquote__container {
+  margin: 12rem 0;
+}
+
+/* line 281, ../../../Desktop/project_ministore/src/sass/style.sass */
+.blockquote__quote {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3.4rem;
+  color: #3A3A3A;
+  letter-spacing: 2%;
+  margin-bottom: 3rem;
+  width: 70%;
+  height: 100%;
+}
+
+/* line 290, ../../../Desktop/project_ministore/src/sass/style.sass */
+.blockquote__img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 293, ../../../Desktop/project_ministore/src/sass/style.sass */
+.blockquote__author {
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 10%;
+}
+
+/* line 298, ../../../Desktop/project_ministore/src/sass/style.sass */
+.blockquote__rating {
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+/* line 301, ../../../Desktop/project_ministore/src/sass/style.sass */
+.blockquote__star {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.7rem;
+  background: url("../icons/star.svg");
+}
+
+/* line 307, ../../../Desktop/project_ministore/src/sass/style.sass */
+.subscribe-form {
+  padding: 0rem 31rem;
 }
 
 /*# sourceMappingURL=style.css.map */
