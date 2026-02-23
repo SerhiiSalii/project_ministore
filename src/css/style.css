@@ -446,9 +446,91 @@ body {
   background: url("../icons/star.svg");
 }
 
-/* line 307, ../../../Desktop/project_ministore/src/sass/style.sass */
-.subscribe-form {
-  padding: 0rem 31rem;
+/* line 308, ../../../Desktop/project_ministore/src/sass/style.sass */
+.subscribe-form__wrapper {
+  padding: 8rem 11rem;
+  background-color: #272727;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/* line 313, ../../../Desktop/project_ministore/src/sass/style.sass */
+.subscribe-form__title {
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 6%;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* line 319, ../../../Desktop/project_ministore/src/sass/style.sass */
+.subscribe-form__subtitle {
+  color: white;
+  font-size: 1.6rem;
+  letter-spacing: 3%;
+}
+
+/* line 324, ../../../Desktop/project_ministore/src/sass/style.sass */
+.subscribe-form__input {
+  display: inline-block;
+  height: 5rem;
+  width: 33rem;
+  border: none;
+  padding: 0;
+  transform: translateX(0.5rem);
+}
+
+/* line 331, ../../../Desktop/project_ministore/src/sass/style.sass */
+.subscribe-form__input::placeholder {
+  font-size: 1.6rem;
+  letter-spacing: 3%;
+  text-align: center;
+}
+
+/* line 335, ../../../Desktop/project_ministore/src/sass/style.sass */
+.subscribe-form__btn {
+  display: inline-block;
+  height: 5rem;
+  width: 16rem;
+  text-transform: uppercase;
+  border: none;
+  background-color: #72AEC8;
+  color: #FFFFFF;
+  padding: 0;
+}
+
+/* line 344, ../../../Desktop/project_ministore/src/sass/style.sass */
+.subscribe-form form {
+  text-align: right;
+}
+
+/* line 348, ../../../Desktop/project_ministore/src/sass/style.sass */
+.instangram-showcase__items {
+  display: flex;
+}
+
+/* line 350, ../../../Desktop/project_ministore/src/sass/style.sass */
+.instangram-showcase__item {
+  position: relative;
+}
+
+/* line 352, ../../../Desktop/project_ministore/src/sass/style.sass */
+.instangram-showcase__item:hover .instangram-showcase__img {
+  filter: brightness(0.7) blur(0.3rem);
+}
+
+/* line 354, ../../../Desktop/project_ministore/src/sass/style.sass */
+.instangram-showcase__item:hover .instangram-showcase__insta-icon {
+  opacity: 1;
+}
+
+/* line 357, ../../../Desktop/project_ministore/src/sass/style.sass */
+.instangram-showcase__insta-icon {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
