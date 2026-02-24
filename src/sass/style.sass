@@ -116,13 +116,13 @@ body
 
 
 .shop-offers
-    display: grid
-    grid-template-rows: min-content 1fr
-    grid-template-columns: repeat(4, max-content)
-    grid-gap: 3rem 2rem
+    // display: grid
+    // grid-template-rows: min-content 1fr
+    // grid-template-columns: repeat(4, max-content)
+    // grid-gap: 3rem 2rem
     margin: 12rem 0
-    &__title
-        grid-column: 1 / -1
+    // &__title
+    //     grid-column: 1 / -1
     &__text
         display: flex
         justify-content: space-between
@@ -135,6 +135,11 @@ body
         font-size: 2rem
         color: $color-blue
         letter-spacing: 3%
+    &__cards
+        display: flex
+        justify-content: space-between
+    &__card
+        display: inline-block            
     &__img-box
         position: relative
         margin-bottom: 1rem
@@ -167,14 +172,15 @@ body
 
         
 
-.title-h3
+.title-container
     display: flex
     justify-content: space-between
+    margin-bottom: 3rem
     &__heading
-        font-size: 3rem
-        letter-spacing: 6%
-        color: $color-black
-        text-transform: uppercase
+        // font-size: 3rem
+        // letter-spacing: 6%
+        // color: $color-black
+        // text-transform: uppercase
     &__link
         position: relative
         &:visited, &:link
@@ -224,6 +230,12 @@ body
         bottom: -6.5rem
     &__title
         margin-bottom: 4.5rem
+
+.title-h3
+    font-size: 3rem
+    letter-spacing: 6%
+    color: $color-black
+    text-transform: uppercase
 
 .title-h2
     text-transform: uppercase
@@ -345,19 +357,96 @@ body
         text-align: right
 
 .instangram-showcase
+    margin: 12rem 0
+    &__title
+        text-align: center
+        margin-bottom: 3rem
     &__items
         display: flex
+        justify-content: space-between
+    &__img
+        transition: all .7s ease
     &__item
         position: relative
         &:hover .instangram-showcase__img
-            filter: brightness(0.7) blur(.3rem)
+            filter: brightness(0.7) blur(.2rem)
         &:hover .instangram-showcase__insta-icon
             opacity: 1
                 
     &__insta-icon
+        transition: all .7s ease
         position: absolute
         right: 50%
         top: 50%
         transform: translate(50%, -50%)
         opacity: 0
+    
 
+
+.footer
+    padding: 0 31rem
+    display: grid
+    grid-template-columns: minmax(34rem, 1fr) repeat(3, 1fr)
+    grid-template-rows: repeat(2, max-content)
+    grid-gap: 8rem 14rem 
+    &__socials
+        // min-width: 34rem
+    &__logo
+        margin-bottom: 2rem
+    &__text
+        font-size: 1.6rem
+        color: $color-gray-dark
+        letter-spacing: 3%
+    &__menu-1
+        // grid-column: 2 / -1
+
+    &__bottom
+        border-top: 1px solid black
+        grid-column: 1 / -1
+        display: flex
+        font-size: 1.6rem
+
+.footer-menu
+    &__title
+        font-size: 2rem
+        letter-spacing: 6%
+        text-transform: uppercase
+        margin-bottom: 2rem
+    &__link
+        &:link, &:visited
+            text-decoration: none
+            letter-spacing: 10%
+            font-size: 1.4rem
+            transition: all .3s ease
+            color: $color-black
+            text-transform: uppercase
+        &:hover
+            color: $color-blue
+    li
+        &:not(:last-child)
+            margin-bottom: 0.8rem
+    &__text
+        font-size: 1.6rem
+        letter-spacing: 3%
+        color: $color-gray-dark
+        font-weight: 300
+        margin-bottom: 1rem
+        line-height: 138%
+        &--underline
+            padding-botom: 
+            display: block
+            font-weight: 600
+            // border-bottom: .1rem solid $color-gray-dark
+            text-decoration: underline
+            text-underline-offset: .5rem
+
+.footer-bottom
+    padding: 2rem 0
+    display: grid
+    grid-template-columns: max-content max-content 1fr
+    gap: 1rem
+    &__text
+        font-size: 1.6rem
+        letter-spacing: 3%
+    &__copyright
+        justify-self: end

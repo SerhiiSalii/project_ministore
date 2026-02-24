@@ -165,16 +165,7 @@ body {
 
 /* line 118, ../../../Desktop/project_ministore/src/sass/style.sass */
 .shop-offers {
-  display: grid;
-  grid-template-rows: min-content 1fr;
-  grid-template-columns: repeat(4, max-content);
-  grid-gap: 3rem 2rem;
   margin: 12rem 0;
-}
-
-/* line 124, ../../../Desktop/project_ministore/src/sass/style.sass */
-.shop-offers__title {
-  grid-column: 1 / -1;
 }
 
 /* line 126, ../../../Desktop/project_ministore/src/sass/style.sass */
@@ -199,17 +190,28 @@ body {
 }
 
 /* line 138, ../../../Desktop/project_ministore/src/sass/style.sass */
+.shop-offers__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 141, ../../../Desktop/project_ministore/src/sass/style.sass */
+.shop-offers__card {
+  display: inline-block;
+}
+
+/* line 143, ../../../Desktop/project_ministore/src/sass/style.sass */
 .shop-offers__img-box {
   position: relative;
   margin-bottom: 1rem;
 }
 
-/* line 142, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 147, ../../../Desktop/project_ministore/src/sass/style.sass */
 .shop-offers__img-box:hover .shop-offers__cart-btn {
   opacity: 1;
 }
 
-/* line 144, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 149, ../../../Desktop/project_ministore/src/sass/style.sass */
 .shop-offers__cart-btn {
   border: none;
   background-color: #272727;
@@ -226,7 +228,7 @@ body {
   transition: all 0.8s ease;
 }
 
-/* line 158, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 163, ../../../Desktop/project_ministore/src/sass/style.sass */
 .shop-offers__cart-btn::after {
   content: "";
   position: absolute;
@@ -238,27 +240,20 @@ body {
   background: url("../icons/cart-button.svg") center/contain no-repeat;
 }
 
-/* line 170, ../../../Desktop/project_ministore/src/sass/style.sass */
-.title-h3 {
+/* line 175, ../../../Desktop/project_ministore/src/sass/style.sass */
+.title-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
-/* line 173, ../../../Desktop/project_ministore/src/sass/style.sass */
-.title-h3__heading {
-  font-size: 3rem;
-  letter-spacing: 6%;
-  color: #272727;
-  text-transform: uppercase;
-}
-
-/* line 178, ../../../Desktop/project_ministore/src/sass/style.sass */
-.title-h3__link {
+/* line 184, ../../../Desktop/project_ministore/src/sass/style.sass */
+.title-container__link {
   position: relative;
 }
 
-/* line 180, ../../../Desktop/project_ministore/src/sass/style.sass */
-.title-h3__link:visited, .title-h3__link:link {
+/* line 186, ../../../Desktop/project_ministore/src/sass/style.sass */
+.title-container__link:visited, .title-container__link:link {
   color: #272727;
   font-size: 1.4rem;
   letter-spacing: 10%;
@@ -266,8 +261,8 @@ body {
   text-transform: uppercase;
 }
 
-/* line 186, ../../../Desktop/project_ministore/src/sass/style.sass */
-.title-h3__link::after {
+/* line 192, ../../../Desktop/project_ministore/src/sass/style.sass */
+.title-container__link::after {
   content: '';
   position: absolute;
   left: 0;
@@ -278,24 +273,24 @@ body {
   transition: all .6s ease;
 }
 
-/* line 195, ../../../Desktop/project_ministore/src/sass/style.sass */
-.title-h3__link:hover::after {
+/* line 201, ../../../Desktop/project_ministore/src/sass/style.sass */
+.title-container__link:hover::after {
   background-color: #FFFFFF;
 }
 
-/* line 199, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 205, ../../../Desktop/project_ministore/src/sass/style.sass */
 .discount-offer__container {
   background-color: #EDF1F3;
   position: relative;
   min-height: 70rem;
 }
 
-/* line 203, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 209, ../../../Desktop/project_ministore/src/sass/style.sass */
 .discount-offer__info {
   padding: 22rem 0 22rem 11rem;
 }
 
-/* line 205, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 211, ../../../Desktop/project_ministore/src/sass/style.sass */
 .discount-offer__subtitle {
   font-size: 3rem;
   letter-spacing: 16%;
@@ -305,7 +300,7 @@ body {
   position: relative;
 }
 
-/* line 212, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 218, ../../../Desktop/project_ministore/src/sass/style.sass */
 .discount-offer__subtitle::before {
   content: "";
   position: absolute;
@@ -317,48 +312,56 @@ body {
   transform: translateY(50%);
 }
 
-/* line 221, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 227, ../../../Desktop/project_ministore/src/sass/style.sass */
 .discount-offer__img {
   position: absolute;
   right: -22rem;
   bottom: -6.5rem;
 }
 
-/* line 225, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 231, ../../../Desktop/project_ministore/src/sass/style.sass */
 .discount-offer__title {
   margin-bottom: 4.5rem;
 }
 
-/* line 228, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 234, ../../../Desktop/project_ministore/src/sass/style.sass */
+.title-h3 {
+  font-size: 3rem;
+  letter-spacing: 6%;
+  color: #272727;
+  text-transform: uppercase;
+}
+
+/* line 240, ../../../Desktop/project_ministore/src/sass/style.sass */
 .title-h2 {
   text-transform: uppercase;
   letter-spacing: 2%;
   font-size: 8.3rem;
 }
 
-/* line 234, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 246, ../../../Desktop/project_ministore/src/sass/style.sass */
 .related-posts__container {
   margin: 12rem 0;
 }
 
-/* line 236, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 248, ../../../Desktop/project_ministore/src/sass/style.sass */
 .related-posts__title {
   margin-bottom: 3rem;
 }
 
-/* line 238, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 250, ../../../Desktop/project_ministore/src/sass/style.sass */
 .related-posts__img {
   margin-bottom: 1.4rem;
 }
 
-/* line 240, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 252, ../../../Desktop/project_ministore/src/sass/style.sass */
 .related-posts__content {
   display: grid;
   grid-template-columns: repeat(3, max-content);
   grid-gap: 2rem;
 }
 
-/* line 244, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 256, ../../../Desktop/project_ministore/src/sass/style.sass */
 .related-posts__content p {
   display: inline-block;
   font-size: 1.3rem;
@@ -369,7 +372,7 @@ body {
   position: relative;
 }
 
-/* line 252, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 264, ../../../Desktop/project_ministore/src/sass/style.sass */
 .related-posts__content p:not(:last-child)::after {
   position: absolute;
   top: 50%;
@@ -382,12 +385,12 @@ body {
   background-color: #848484;
 }
 
-/* line 262, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 274, ../../../Desktop/project_ministore/src/sass/style.sass */
 .related-posts__content p:not(:last-child) {
   margin-right: 1rem;
 }
 
-/* line 266, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 278, ../../../Desktop/project_ministore/src/sass/style.sass */
 .related-posts__post-title:link, .related-posts__post-title:visited {
   font-size: 2rem;
   letter-spacing: 6%;
@@ -396,17 +399,17 @@ body {
   text-transform: uppercase;
 }
 
-/* line 272, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 284, ../../../Desktop/project_ministore/src/sass/style.sass */
 .related-posts__post-title:hover {
   opacity: 0.8;
 }
 
-/* line 279, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 291, ../../../Desktop/project_ministore/src/sass/style.sass */
 .blockquote__container {
   margin: 12rem 0;
 }
 
-/* line 281, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 293, ../../../Desktop/project_ministore/src/sass/style.sass */
 .blockquote__quote {
   margin: 0 auto;
   text-align: center;
@@ -418,13 +421,13 @@ body {
   height: 100%;
 }
 
-/* line 290, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 302, ../../../Desktop/project_ministore/src/sass/style.sass */
 .blockquote__img {
   display: block;
   margin: 0 auto;
 }
 
-/* line 293, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 305, ../../../Desktop/project_ministore/src/sass/style.sass */
 .blockquote__author {
   text-align: center;
   font-size: 1.4rem;
@@ -432,13 +435,13 @@ body {
   letter-spacing: 10%;
 }
 
-/* line 298, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 310, ../../../Desktop/project_ministore/src/sass/style.sass */
 .blockquote__rating {
   text-align: center;
   margin-bottom: 0.8rem;
 }
 
-/* line 301, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 313, ../../../Desktop/project_ministore/src/sass/style.sass */
 .blockquote__star {
   display: inline-block;
   width: 1.7rem;
@@ -446,7 +449,7 @@ body {
   background: url("../icons/star.svg");
 }
 
-/* line 308, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 320, ../../../Desktop/project_ministore/src/sass/style.sass */
 .subscribe-form__wrapper {
   padding: 8rem 11rem;
   background-color: #272727;
@@ -454,7 +457,7 @@ body {
   grid-template-columns: 50% 50%;
 }
 
-/* line 313, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 325, ../../../Desktop/project_ministore/src/sass/style.sass */
 .subscribe-form__title {
   color: white;
   font-size: 3rem;
@@ -463,14 +466,14 @@ body {
   margin-bottom: 1rem;
 }
 
-/* line 319, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 331, ../../../Desktop/project_ministore/src/sass/style.sass */
 .subscribe-form__subtitle {
   color: white;
   font-size: 1.6rem;
   letter-spacing: 3%;
 }
 
-/* line 324, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 336, ../../../Desktop/project_ministore/src/sass/style.sass */
 .subscribe-form__input {
   display: inline-block;
   height: 5rem;
@@ -480,14 +483,14 @@ body {
   transform: translateX(0.5rem);
 }
 
-/* line 331, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 343, ../../../Desktop/project_ministore/src/sass/style.sass */
 .subscribe-form__input::placeholder {
   font-size: 1.6rem;
   letter-spacing: 3%;
   text-align: center;
 }
 
-/* line 335, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 347, ../../../Desktop/project_ministore/src/sass/style.sass */
 .subscribe-form__btn {
   display: inline-block;
   height: 5rem;
@@ -499,38 +502,150 @@ body {
   padding: 0;
 }
 
-/* line 344, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 356, ../../../Desktop/project_ministore/src/sass/style.sass */
 .subscribe-form form {
   text-align: right;
 }
 
-/* line 348, ../../../Desktop/project_ministore/src/sass/style.sass */
-.instangram-showcase__items {
-  display: flex;
+/* line 359, ../../../Desktop/project_ministore/src/sass/style.sass */
+.instangram-showcase {
+  margin: 12rem 0;
 }
 
-/* line 350, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 361, ../../../Desktop/project_ministore/src/sass/style.sass */
+.instangram-showcase__title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* line 364, ../../../Desktop/project_ministore/src/sass/style.sass */
+.instangram-showcase__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 367, ../../../Desktop/project_ministore/src/sass/style.sass */
+.instangram-showcase__img {
+  transition: all .7s ease;
+}
+
+/* line 369, ../../../Desktop/project_ministore/src/sass/style.sass */
 .instangram-showcase__item {
   position: relative;
 }
 
-/* line 352, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 371, ../../../Desktop/project_ministore/src/sass/style.sass */
 .instangram-showcase__item:hover .instangram-showcase__img {
-  filter: brightness(0.7) blur(0.3rem);
+  filter: brightness(0.7) blur(0.2rem);
 }
 
-/* line 354, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 373, ../../../Desktop/project_ministore/src/sass/style.sass */
 .instangram-showcase__item:hover .instangram-showcase__insta-icon {
   opacity: 1;
 }
 
-/* line 357, ../../../Desktop/project_ministore/src/sass/style.sass */
+/* line 376, ../../../Desktop/project_ministore/src/sass/style.sass */
 .instangram-showcase__insta-icon {
+  transition: all .7s ease;
   position: absolute;
   right: 50%;
   top: 50%;
   transform: translate(50%, -50%);
   opacity: 0;
+}
+
+/* line 386, ../../../Desktop/project_ministore/src/sass/style.sass */
+.footer {
+  padding: 0 31rem;
+  display: grid;
+  grid-template-columns: minmax(34rem, 1fr) repeat(3, 1fr);
+  grid-template-rows: repeat(2, max-content);
+  grid-gap: 8rem 14rem;
+}
+
+/* line 394, ../../../Desktop/project_ministore/src/sass/style.sass */
+.footer__logo {
+  margin-bottom: 2rem;
+}
+
+/* line 396, ../../../Desktop/project_ministore/src/sass/style.sass */
+.footer__text {
+  font-size: 1.6rem;
+  color: #3A3A3A;
+  letter-spacing: 3%;
+}
+
+/* line 403, ../../../Desktop/project_ministore/src/sass/style.sass */
+.footer__bottom {
+  border-top: 1px solid black;
+  grid-column: 1 / -1;
+  display: flex;
+  font-size: 1.6rem;
+}
+
+/* line 410, ../../../Desktop/project_ministore/src/sass/style.sass */
+.footer-menu__title {
+  font-size: 2rem;
+  letter-spacing: 6%;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/* line 416, ../../../Desktop/project_ministore/src/sass/style.sass */
+.footer-menu__link:link, .footer-menu__link:visited {
+  text-decoration: none;
+  letter-spacing: 10%;
+  font-size: 1.4rem;
+  transition: all .3s ease;
+  color: #272727;
+  text-transform: uppercase;
+}
+
+/* line 423, ../../../Desktop/project_ministore/src/sass/style.sass */
+.footer-menu__link:hover {
+  color: #72AEC8;
+}
+
+/* line 426, ../../../Desktop/project_ministore/src/sass/style.sass */
+.footer-menu li:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+/* line 428, ../../../Desktop/project_ministore/src/sass/style.sass */
+.footer-menu__text {
+  font-size: 1.6rem;
+  letter-spacing: 3%;
+  color: #3A3A3A;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  line-height: 138%;
+}
+
+/* line 435, ../../../Desktop/project_ministore/src/sass/style.sass */
+.footer-menu__text--underline {
+  display: block;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: .5rem;
+}
+
+/* line 443, ../../../Desktop/project_ministore/src/sass/style.sass */
+.footer-bottom {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  gap: 1rem;
+}
+
+/* line 448, ../../../Desktop/project_ministore/src/sass/style.sass */
+.footer-bottom__text {
+  font-size: 1.6rem;
+  letter-spacing: 3%;
+}
+
+/* line 451, ../../../Desktop/project_ministore/src/sass/style.sass */
+.footer-bottom__copyright {
+  justify-self: end;
 }
 
 /*# sourceMappingURL=style.css.map */
