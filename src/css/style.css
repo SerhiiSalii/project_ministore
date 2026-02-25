@@ -1,20 +1,85 @@
-/* line 14, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 1, ../../../Desktop/project_ministore/src/scss/base/_base.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 18, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 5, ../../../Desktop/project_ministore/src/scss/base/_base.scss */
 body {
   font-family: "Lato", sans-serif;
 }
 
-/* line 25, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 9, ../../../Desktop/project_ministore/src/scss/base/_base.scss */
 .container {
   padding: 0rem 31rem;
   box-sizing: border-box;
 }
 
-/* line 33, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 1, ../../../Desktop/project_ministore/src/scss/base/_typograpghy.scss */
+.title-h1 {
+  font-size: 8.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 6, ../../../Desktop/project_ministore/src/scss/base/_typograpghy.scss */
+.title-h1--hero {
+  width: 60%;
+}
+
+/* line 11, ../../../Desktop/project_ministore/src/scss/base/_typograpghy.scss */
+.title-h2 {
+  text-transform: uppercase;
+  letter-spacing: 2%;
+  font-size: 8.3rem;
+}
+
+/* line 17, ../../../Desktop/project_ministore/src/scss/base/_typograpghy.scss */
+.title-h3 {
+  font-size: 3rem;
+  letter-spacing: 6%;
+  color: #272727;
+  text-transform: uppercase;
+}
+
+/* line 24, ../../../Desktop/project_ministore/src/scss/base/_typograpghy.scss */
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+/* line 29, ../../../Desktop/project_ministore/src/scss/base/_typograpghy.scss */
+.title-container__link {
+  position: relative;
+}
+
+/* line 32, ../../../Desktop/project_ministore/src/scss/base/_typograpghy.scss */
+.title-container__link:visited, .title-container__link:link {
+  color: #272727;
+  font-size: 1.4rem;
+  letter-spacing: 10%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 41, ../../../Desktop/project_ministore/src/scss/base/_typograpghy.scss */
+.title-container__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0.8rem;
+  width: 100%;
+  height: 0.3rem;
+  background-color: #E1E1E1;
+  transition: all 0.6s ease;
+}
+
+/* line 52, ../../../Desktop/project_ministore/src/scss/base/_typograpghy.scss */
+.title-container__link:hover::after {
+  background-color: #FFFFFF;
+}
+
+/* line 1, ../../../Desktop/project_ministore/src/scss/layout/_header.scss */
 .header {
   padding: 1.4rem 31rem;
   display: grid;
@@ -22,14 +87,108 @@ body {
   align-items: center;
 }
 
-/* line 39, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 7, ../../../Desktop/project_ministore/src/scss/layout/_header.scss */
 .header__icons {
   display: flex;
   gap: 2rem;
   justify-self: end;
 }
 
-/* line 49, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 1, ../../../Desktop/project_ministore/src/scss/layout/_footer.scss */
+.footer {
+  padding: 0 31rem;
+  display: grid;
+  grid-template-columns: minmax(34rem, 1fr) repeat(3, 1fr);
+  grid-template-rows: repeat(2, max-content);
+  grid-gap: 8rem 14rem;
+}
+
+/* line 8, ../../../Desktop/project_ministore/src/scss/layout/_footer.scss */
+.footer__logo {
+  margin-bottom: 2rem;
+}
+
+/* line 12, ../../../Desktop/project_ministore/src/scss/layout/_footer.scss */
+.footer__text {
+  font-size: 1.6rem;
+  color: #3A3A3A;
+  letter-spacing: 3%;
+}
+
+/* line 18, ../../../Desktop/project_ministore/src/scss/layout/_footer.scss */
+.footer__bottom {
+  border-top: 1px solid black;
+  grid-column: 1 / -1;
+  display: flex;
+  font-size: 1.6rem;
+}
+
+/* line 27, ../../../Desktop/project_ministore/src/scss/layout/_footer.scss */
+.footer-menu__title {
+  font-size: 2rem;
+  letter-spacing: 6%;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/* line 35, ../../../Desktop/project_ministore/src/scss/layout/_footer.scss */
+.footer-menu__link:link, .footer-menu__link:visited {
+  text-decoration: none;
+  letter-spacing: 10%;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+  color: #272727;
+  text-transform: uppercase;
+}
+
+/* line 45, ../../../Desktop/project_ministore/src/scss/layout/_footer.scss */
+.footer-menu__link:hover {
+  color: #72AEC8;
+}
+
+/* line 51, ../../../Desktop/project_ministore/src/scss/layout/_footer.scss */
+.footer-menu li:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+/* line 56, ../../../Desktop/project_ministore/src/scss/layout/_footer.scss */
+.footer-menu__text {
+  font-size: 1.6rem;
+  letter-spacing: 3%;
+  color: #3A3A3A;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  line-height: 138%;
+}
+
+/* line 64, ../../../Desktop/project_ministore/src/scss/layout/_footer.scss */
+.footer-menu__text--underline {
+  display: block;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+/* line 74, ../../../Desktop/project_ministore/src/scss/layout/_footer.scss */
+.footer-bottom {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  gap: 1rem;
+}
+
+/* line 80, ../../../Desktop/project_ministore/src/scss/layout/_footer.scss */
+.footer-bottom__text {
+  font-size: 1.6rem;
+  letter-spacing: 3%;
+}
+
+/* line 85, ../../../Desktop/project_ministore/src/scss/layout/_footer.scss */
+.footer-bottom__copyright {
+  justify-self: end;
+}
+
+/* line 1, ../../../Desktop/project_ministore/src/scss/layout/_navigation.scss */
 .navigation {
   display: flex;
   list-style: none;
@@ -38,109 +197,60 @@ body {
   z-index: 100;
 }
 
-/* line 56, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 8, ../../../Desktop/project_ministore/src/scss/layout/_navigation.scss */
 .navigation__menu {
   display: flex;
 }
 
-/* line 60, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 12, ../../../Desktop/project_ministore/src/scss/layout/_navigation.scss */
 .navigation__item {
   font-size: 1.4rem;
   text-transform: uppercase;
 }
 
-/* line 64, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 16, ../../../Desktop/project_ministore/src/scss/layout/_navigation.scss */
 .navigation__item:not(:last-child) {
   margin-right: 4.4rem;
 }
 
-/* line 69, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 21, ../../../Desktop/project_ministore/src/scss/layout/_navigation.scss */
 .navigation__link {
   text-decoration: none;
   transition: all 0.3s;
 }
 
-/* line 73, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 25, ../../../Desktop/project_ministore/src/scss/layout/_navigation.scss */
 .navigation__link:active, .navigation__link:visited {
   color: #272727;
 }
 
-/* line 78, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 30, ../../../Desktop/project_ministore/src/scss/layout/_navigation.scss */
 .navigation__link:hover {
   color: #72AEC8;
 }
 
-/* line 88, ../../../Desktop/project_ministore/src/scss/style.scss */
-.main-section__container {
+/* line 2, ../../../Desktop/project_ministore/src/scss/layout/_hero-banner.scss */
+.hero-banner__container {
   background: #EDF1F3;
   padding: 10rem 31rem;
   position: relative;
   min-height: 61rem;
 }
 
-/* line 95, ../../../Desktop/project_ministore/src/scss/style.scss */
-.main-section__img {
+/* line 9, ../../../Desktop/project_ministore/src/scss/layout/_hero-banner.scss */
+.hero-banner__img {
   position: absolute;
   right: 25rem;
   top: -7rem;
   transition: all 0.3s;
 }
 
-/* line 101, ../../../Desktop/project_ministore/src/scss/style.scss */
-.main-section__img:hover {
+/* line 15, ../../../Desktop/project_ministore/src/scss/layout/_hero-banner.scss */
+.hero-banner__img:hover {
   transform: scale(1.05);
 }
 
-/* line 110, ../../../Desktop/project_ministore/src/scss/style.scss */
-.title {
-  font-size: 8.3rem;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-/* line 115, ../../../Desktop/project_ministore/src/scss/style.scss */
-.title_main {
-  width: 60%;
-}
-
-/* line 120, ../../../Desktop/project_ministore/src/scss/style.scss */
-.title-h2 {
-  text-transform: uppercase;
-  letter-spacing: 2%;
-  font-size: 8.3rem;
-}
-
-/* line 126, ../../../Desktop/project_ministore/src/scss/style.scss */
-.title-h3 {
-  font-size: 3rem;
-  letter-spacing: 6%;
-  color: #272727;
-  text-transform: uppercase;
-}
-
-/* line 136, ../../../Desktop/project_ministore/src/scss/style.scss */
-.btn {
-  display: inline-block;
-  background-color: #272727;
-  padding: 1.6rem 5rem;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 1.4rem;
-  transition: all 0.3s;
-}
-
-/* line 146, ../../../Desktop/project_ministore/src/scss/style.scss */
-.btn:hover {
-  transform: scale(1.1);
-}
-
-/* line 150, ../../../Desktop/project_ministore/src/scss/style.scss */
-.btn:active {
-  display: none;
-}
-
-/* line 158, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 1, ../../../Desktop/project_ministore/src/scss/layout/_advantages.scss */
 .advantages {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -148,14 +258,14 @@ body {
   gap: 0 5.5rem;
 }
 
-/* line 164, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 7, ../../../Desktop/project_ministore/src/scss/layout/_advantages.scss */
 .advantages__card {
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: 0.5rem 1.5rem;
 }
 
-/* line 170, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 13, ../../../Desktop/project_ministore/src/scss/layout/_advantages.scss */
 .advantages__title {
   font-size: 2rem;
   text-transform: uppercase;
@@ -163,7 +273,7 @@ body {
   letter-spacing: 6%;
 }
 
-/* line 177, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 20, ../../../Desktop/project_ministore/src/scss/layout/_advantages.scss */
 .advantages__text {
   font-size: 1.6rem;
   color: #3A3A3A;
@@ -172,31 +282,31 @@ body {
   letter-spacing: 3%;
 }
 
-/* line 185, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 28, ../../../Desktop/project_ministore/src/scss/layout/_advantages.scss */
 .advantages__img {
   grid-row: 1 / span 2;
   transform: translateY(-0.5rem);
 }
 
-/* line 194, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 1, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
 .shop-offers {
   margin: 12rem 0;
 }
 
-/* line 197, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 4, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
 .shop-offers__text {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 202, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 9, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
 .shop-offers__name {
   font-size: 2rem;
   text-transform: uppercase;
   display: inline-block;
 }
 
-/* line 208, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 15, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
 .shop-offers__price {
   display: inline-block;
   font-size: 2rem;
@@ -204,29 +314,29 @@ body {
   letter-spacing: 3%;
 }
 
-/* line 215, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 22, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
 .shop-offers__cards {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 220, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 27, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
 .shop-offers__card {
   display: inline-block;
 }
 
-/* line 224, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 31, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
 .shop-offers__img-box {
   position: relative;
   margin-bottom: 1rem;
 }
 
-/* line 229, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 36, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
 .shop-offers__img-box:hover .shop-offers__cart-btn {
   opacity: 1;
 }
 
-/* line 235, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 42, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
 .shop-offers__cart-btn {
   border: none;
   background-color: #272727;
@@ -243,7 +353,7 @@ body {
   transition: all 0.8s ease;
 }
 
-/* line 250, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 57, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
 .shop-offers__cart-btn::after {
   content: "";
   position: absolute;
@@ -255,57 +365,19 @@ body {
   background: url("../icons/cart-button.svg") center/contain no-repeat;
 }
 
-/* line 266, ../../../Desktop/project_ministore/src/scss/style.scss */
-.title-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 3rem;
-}
-
-/* line 271, ../../../Desktop/project_ministore/src/scss/style.scss */
-.title-container__link {
-  position: relative;
-}
-
-/* line 274, ../../../Desktop/project_ministore/src/scss/style.scss */
-.title-container__link:visited, .title-container__link:link {
-  color: #272727;
-  font-size: 1.4rem;
-  letter-spacing: 10%;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-/* line 283, ../../../Desktop/project_ministore/src/scss/style.scss */
-.title-container__link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0.8rem;
-  width: 100%;
-  height: 0.3rem;
-  background-color: #E1E1E1;
-  transition: all 0.6s ease;
-}
-
-/* line 294, ../../../Desktop/project_ministore/src/scss/style.scss */
-.title-container__link:hover::after {
-  background-color: #FFFFFF;
-}
-
-/* line 304, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 2, ../../../Desktop/project_ministore/src/scss/layout/_discount-offer.scss */
 .discount-offer__container {
   background-color: #EDF1F3;
   position: relative;
   min-height: 70rem;
 }
 
-/* line 310, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 8, ../../../Desktop/project_ministore/src/scss/layout/_discount-offer.scss */
 .discount-offer__info {
   padding: 22rem 0 22rem 11rem;
 }
 
-/* line 314, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 12, ../../../Desktop/project_ministore/src/scss/layout/_discount-offer.scss */
 .discount-offer__subtitle {
   font-size: 3rem;
   letter-spacing: 16%;
@@ -315,7 +387,7 @@ body {
   position: relative;
 }
 
-/* line 322, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 20, ../../../Desktop/project_ministore/src/scss/layout/_discount-offer.scss */
 .discount-offer__subtitle::before {
   content: "";
   position: absolute;
@@ -327,41 +399,41 @@ body {
   transform: translateY(50%);
 }
 
-/* line 334, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 32, ../../../Desktop/project_ministore/src/scss/layout/_discount-offer.scss */
 .discount-offer__img {
   position: absolute;
   right: -22rem;
   bottom: -6.5rem;
 }
 
-/* line 340, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 38, ../../../Desktop/project_ministore/src/scss/layout/_discount-offer.scss */
 .discount-offer__title {
   margin-bottom: 4.5rem;
 }
 
-/* line 349, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 2, ../../../Desktop/project_ministore/src/scss/layout/_related-posts.scss */
 .related-posts__container {
   margin: 12rem 0;
 }
 
-/* line 353, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 6, ../../../Desktop/project_ministore/src/scss/layout/_related-posts.scss */
 .related-posts__title {
   margin-bottom: 3rem;
 }
 
-/* line 357, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 10, ../../../Desktop/project_ministore/src/scss/layout/_related-posts.scss */
 .related-posts__img {
   margin-bottom: 1.4rem;
 }
 
-/* line 361, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 14, ../../../Desktop/project_ministore/src/scss/layout/_related-posts.scss */
 .related-posts__content {
   display: grid;
   grid-template-columns: repeat(3, max-content);
   grid-gap: 2rem;
 }
 
-/* line 366, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 19, ../../../Desktop/project_ministore/src/scss/layout/_related-posts.scss */
 .related-posts__content p {
   display: inline-block;
   font-size: 1.3rem;
@@ -372,7 +444,7 @@ body {
   position: relative;
 }
 
-/* line 375, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 28, ../../../Desktop/project_ministore/src/scss/layout/_related-posts.scss */
 .related-posts__content p:not(:last-child)::after {
   position: absolute;
   top: 50%;
@@ -385,12 +457,12 @@ body {
   background-color: #848484;
 }
 
-/* line 387, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 40, ../../../Desktop/project_ministore/src/scss/layout/_related-posts.scss */
 .related-posts__content p:not(:last-child) {
   margin-right: 1rem;
 }
 
-/* line 394, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 47, ../../../Desktop/project_ministore/src/scss/layout/_related-posts.scss */
 .related-posts__post-title:link, .related-posts__post-title:visited {
   font-size: 2rem;
   letter-spacing: 6%;
@@ -399,17 +471,64 @@ body {
   text-transform: uppercase;
 }
 
-/* line 403, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 56, ../../../Desktop/project_ministore/src/scss/layout/_related-posts.scss */
 .related-posts__post-title:hover {
   opacity: 0.8;
 }
 
-/* line 413, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 1, ../../../Desktop/project_ministore/src/scss/layout/_instagram-showcase.scss */
+.instagram-showcase {
+  margin: 12rem 0;
+}
+
+/* line 4, ../../../Desktop/project_ministore/src/scss/layout/_instagram-showcase.scss */
+.instagram-showcase__title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* line 9, ../../../Desktop/project_ministore/src/scss/layout/_instagram-showcase.scss */
+.instagram-showcase__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 14, ../../../Desktop/project_ministore/src/scss/layout/_instagram-showcase.scss */
+.instagram-showcase__img {
+  transition: all 0.7s ease;
+}
+
+/* line 18, ../../../Desktop/project_ministore/src/scss/layout/_instagram-showcase.scss */
+.instagram-showcase__item {
+  position: relative;
+}
+
+/* line 21, ../../../Desktop/project_ministore/src/scss/layout/_instagram-showcase.scss */
+.instagram-showcase__item:hover .instagram-showcase__img {
+  filter: brightness(0.7) blur(0.2rem);
+}
+
+/* line 25, ../../../Desktop/project_ministore/src/scss/layout/_instagram-showcase.scss */
+.instagram-showcase__item:hover .instagram-showcase__insta-icon {
+  opacity: 1;
+}
+
+/* line 30, ../../../Desktop/project_ministore/src/scss/layout/_instagram-showcase.scss */
+.instagram-showcase__insta-icon {
+  transition: all 0.7s ease;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  opacity: 0;
+}
+
+/* line 2, ../../../Desktop/project_ministore/src/scss/components/_blockquote.scss */
 .blockquote__container {
   margin: 12rem 0;
 }
 
-/* line 417, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 6, ../../../Desktop/project_ministore/src/scss/components/_blockquote.scss */
 .blockquote__quote {
   margin: 0 auto;
   text-align: center;
@@ -421,13 +540,13 @@ body {
   height: 100%;
 }
 
-/* line 428, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 17, ../../../Desktop/project_ministore/src/scss/components/_blockquote.scss */
 .blockquote__img {
   display: block;
   margin: 0 auto;
 }
 
-/* line 433, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 22, ../../../Desktop/project_ministore/src/scss/components/_blockquote.scss */
 .blockquote__author {
   text-align: center;
   font-size: 1.4rem;
@@ -435,13 +554,13 @@ body {
   letter-spacing: 10%;
 }
 
-/* line 440, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 29, ../../../Desktop/project_ministore/src/scss/components/_blockquote.scss */
 .blockquote__rating {
   text-align: center;
   margin-bottom: 0.8rem;
 }
 
-/* line 445, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 34, ../../../Desktop/project_ministore/src/scss/components/_blockquote.scss */
 .blockquote__star {
   display: inline-block;
   width: 1.7rem;
@@ -449,7 +568,7 @@ body {
   background: url("../icons/star.svg");
 }
 
-/* line 457, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 2, ../../../Desktop/project_ministore/src/scss/components/_subscribe-form.scss */
 .subscribe-form__wrapper {
   padding: 8rem 11rem;
   background-color: #272727;
@@ -457,7 +576,7 @@ body {
   grid-template-columns: 50% 50%;
 }
 
-/* line 464, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 9, ../../../Desktop/project_ministore/src/scss/components/_subscribe-form.scss */
 .subscribe-form__title {
   color: white;
   font-size: 3rem;
@@ -466,14 +585,14 @@ body {
   margin-bottom: 1rem;
 }
 
-/* line 472, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 17, ../../../Desktop/project_ministore/src/scss/components/_subscribe-form.scss */
 .subscribe-form__subtitle {
   color: white;
   font-size: 1.6rem;
   letter-spacing: 3%;
 }
 
-/* line 478, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 23, ../../../Desktop/project_ministore/src/scss/components/_subscribe-form.scss */
 .subscribe-form__input {
   display: inline-block;
   height: 5rem;
@@ -483,14 +602,14 @@ body {
   transform: translateX(0.5rem);
 }
 
-/* line 486, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 31, ../../../Desktop/project_ministore/src/scss/components/_subscribe-form.scss */
 .subscribe-form__input::placeholder {
   font-size: 1.6rem;
   letter-spacing: 3%;
   text-align: center;
 }
 
-/* line 493, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 38, ../../../Desktop/project_ministore/src/scss/components/_subscribe-form.scss */
 .subscribe-form__btn {
   display: inline-block;
   height: 5rem;
@@ -502,150 +621,31 @@ body {
   padding: 0;
 }
 
-/* line 504, ../../../Desktop/project_ministore/src/scss/style.scss */
+/* line 49, ../../../Desktop/project_ministore/src/scss/components/_subscribe-form.scss */
 .subscribe-form form {
   text-align: right;
 }
 
-/* line 512, ../../../Desktop/project_ministore/src/scss/style.scss */
-.instangram-showcase {
-  margin: 12rem 0;
-}
-
-/* line 515, ../../../Desktop/project_ministore/src/scss/style.scss */
-.instangram-showcase__title {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-/* line 520, ../../../Desktop/project_ministore/src/scss/style.scss */
-.instangram-showcase__items {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* line 525, ../../../Desktop/project_ministore/src/scss/style.scss */
-.instangram-showcase__img {
-  transition: all 0.7s ease;
-}
-
-/* line 529, ../../../Desktop/project_ministore/src/scss/style.scss */
-.instangram-showcase__item {
-  position: relative;
-}
-
-/* line 532, ../../../Desktop/project_ministore/src/scss/style.scss */
-.instangram-showcase__item:hover .instangram-showcase__img {
-  filter: brightness(0.7) blur(0.2rem);
-}
-
-/* line 536, ../../../Desktop/project_ministore/src/scss/style.scss */
-.instangram-showcase__item:hover .instangram-showcase__insta-icon {
-  opacity: 1;
-}
-
-/* line 541, ../../../Desktop/project_ministore/src/scss/style.scss */
-.instangram-showcase__insta-icon {
-  transition: all 0.7s ease;
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  transform: translate(50%, -50%);
-  opacity: 0;
-}
-
-/* line 554, ../../../Desktop/project_ministore/src/scss/style.scss */
-.footer {
-  padding: 0 31rem;
-  display: grid;
-  grid-template-columns: minmax(34rem, 1fr) repeat(3, 1fr);
-  grid-template-rows: repeat(2, max-content);
-  grid-gap: 8rem 14rem;
-}
-
-/* line 561, ../../../Desktop/project_ministore/src/scss/style.scss */
-.footer__logo {
-  margin-bottom: 2rem;
-}
-
-/* line 565, ../../../Desktop/project_ministore/src/scss/style.scss */
-.footer__text {
-  font-size: 1.6rem;
-  color: #3A3A3A;
-  letter-spacing: 3%;
-}
-
-/* line 571, ../../../Desktop/project_ministore/src/scss/style.scss */
-.footer__bottom {
-  border-top: 1px solid black;
-  grid-column: 1 / -1;
-  display: flex;
-  font-size: 1.6rem;
-}
-
-/* line 583, ../../../Desktop/project_ministore/src/scss/style.scss */
-.footer-menu__title {
-  font-size: 2rem;
-  letter-spacing: 6%;
+/* line 1, ../../../Desktop/project_ministore/src/scss/components/_btn.scss */
+.btn {
+  display: inline-block;
+  background-color: #272727;
+  padding: 1.6rem 5rem;
+  color: #FFFFFF;
   text-transform: uppercase;
-  margin-bottom: 2rem;
-}
-
-/* line 591, ../../../Desktop/project_ministore/src/scss/style.scss */
-.footer-menu__link:link, .footer-menu__link:visited {
   text-decoration: none;
-  letter-spacing: 10%;
   font-size: 1.4rem;
-  transition: all 0.3s ease;
-  color: #272727;
-  text-transform: uppercase;
+  transition: all 0.3s;
 }
 
-/* line 601, ../../../Desktop/project_ministore/src/scss/style.scss */
-.footer-menu__link:hover {
-  color: #72AEC8;
+/* line 11, ../../../Desktop/project_ministore/src/scss/components/_btn.scss */
+.btn:hover {
+  transform: scale(1.1);
 }
 
-/* line 607, ../../../Desktop/project_ministore/src/scss/style.scss */
-.footer-menu li:not(:last-child) {
-  margin-bottom: 0.8rem;
-}
-
-/* line 612, ../../../Desktop/project_ministore/src/scss/style.scss */
-.footer-menu__text {
-  font-size: 1.6rem;
-  letter-spacing: 3%;
-  color: #3A3A3A;
-  font-weight: 300;
-  margin-bottom: 1rem;
-  line-height: 138%;
-}
-
-/* line 620, ../../../Desktop/project_ministore/src/scss/style.scss */
-.footer-menu__text--underline {
-  display: block;
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
-}
-
-/* line 632, ../../../Desktop/project_ministore/src/scss/style.scss */
-.footer-bottom {
-  padding: 2rem 0;
-  display: grid;
-  grid-template-columns: max-content max-content 1fr;
-  gap: 1rem;
-}
-
-/* line 638, ../../../Desktop/project_ministore/src/scss/style.scss */
-.footer-bottom__text {
-  font-size: 1.6rem;
-  letter-spacing: 3%;
-}
-
-/* line 643, ../../../Desktop/project_ministore/src/scss/style.scss */
-.footer-bottom__copyright {
-  justify-self: end;
+/* line 15, ../../../Desktop/project_ministore/src/scss/components/_btn.scss */
+.btn:active {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

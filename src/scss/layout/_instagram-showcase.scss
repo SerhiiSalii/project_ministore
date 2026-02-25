@@ -1,0 +1,38 @@
+.instagram-showcase {
+    margin: 12rem 0;
+    
+    &__title {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__img {
+        transition: all 0.7s ease;
+    }
+    
+    &__item {
+        position: relative;
+        
+        &:hover .instagram-showcase__img {
+            filter: brightness(0.7) blur(0.2rem);
+        }
+        
+        &:hover .instagram-showcase__insta-icon {
+            opacity: 1;
+        }
+    }
+    
+    &__insta-icon {
+        transition: all 0.7s ease;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+        opacity: 0;
+    }
+}

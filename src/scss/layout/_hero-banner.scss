@@ -1,0 +1,19 @@
+.hero-banner {
+    &__container {
+        background: $color-gray;
+        padding: 10rem 31rem;
+        position: relative;
+        min-height: 61rem;
+    }
+    
+    &__img {
+        position: absolute;
+        right: 25rem;
+        top: -7rem;
+        transition: all 0.3s;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.navigation {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    
+    &__menu {
+        display: flex;
+    }
+    
+    &__item {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        
+        &:not(:last-child) {
+            margin-right: 4.4rem;
+        }
+    }
+    
+    &__link {
+        text-decoration: none;
+        transition: all 0.3s;
+        
+        &:active,
+        &:visited {
+            color: $color-black;
+        }
+        
+        &:hover {
+            color: $color-blue;
+        }
+    }
+}

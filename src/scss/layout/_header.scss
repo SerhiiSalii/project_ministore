@@ -1,0 +1,12 @@
+.header {
+    padding: 1.4rem 31rem;
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr;
+    align-items: center;
+    
+    &__icons {
+        display: flex;
+        gap: 2rem;
+        justify-self: end;
+    }
+}

@@ -1,0 +1,68 @@
+.shop-offers {
+    margin: 12rem 0;
+    
+    &__text {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__name {
+        font-size: 2rem;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+    
+    &__price {
+        display: inline-block;
+        font-size: 2rem;
+        color: $color-blue;
+        letter-spacing: 3%;
+    }
+    
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__card {
+        display: inline-block;
+    }
+    
+    &__img-box {
+        position: relative;
+        margin-bottom: 1rem;
+        
+        &:hover {
+            .shop-offers__cart-btn {
+                opacity: 1;
+            }
+        }
+    }
+    
+    &__cart-btn {
+        border: none;
+        background-color: $color-black;
+        color: $color-white;
+        width: 19.1rem;
+        height: 3.7rem;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.8s ease;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            right: 3rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1.6rem;
+            height: 1.6rem;
+            background: url("../icons/cart-button.svg") center / contain no-repeat;
+        }
+    }
+}

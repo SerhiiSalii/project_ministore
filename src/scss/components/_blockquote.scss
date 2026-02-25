@@ -1,0 +1,40 @@
+.blockquote {
+    &__container {
+        margin: 12rem 0;
+    }
+    
+    &__quote {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 3.4rem;
+        color: $color-gray-dark;
+        letter-spacing: 2%;
+        margin-bottom: 3rem;
+        width: 70%;
+        height: 100%;
+    }
+    
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    &__author {
+        text-align: center;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 10%;
+    }
+    
+    &__rating {
+        text-align: center;
+        margin-bottom: 0.8rem;
+    }
+    
+    &__star {
+        display: inline-block;
+        width: 1.7rem;
+        height: 1.7rem;
+        background: url("../icons/star.svg");
+    }
+}
