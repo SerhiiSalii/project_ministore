@@ -1,5 +1,5 @@
 .footer {
-    padding: 0 31rem;
+    // padding: 0 31rem; //коли перероблю головну, прибрати
     display: grid;
     grid-template-columns: minmax(34rem, 1fr) repeat(3, 1fr);
     grid-template-rows: repeat(2, max-content);
