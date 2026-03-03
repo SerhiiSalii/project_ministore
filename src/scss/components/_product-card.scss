@@ -1,10 +1,21 @@
-.shop-offers {
-    margin: 12rem 0;
-    
-    &__text {
+.product-card {
+    display: inline-block;
+    max-width: 31rem;
+    &__img-box {
+        position: relative;
+        margin-bottom: 1rem;
+        
+        &:hover {
+            .product-card__cart-btn {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__info {
         display: flex;
         justify-content: space-between;
-    }
+    }    
     
     &__name {
         font-size: 2rem;
@@ -18,27 +29,7 @@
         color: $color-blue;
         letter-spacing: 3%;
     }
-    
-    &__cards {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    &__card {
-        display: inline-block;
-    }
-    
-    &__img-box {
-        position: relative;
-        margin-bottom: 1rem;
-        
-        &:hover {
-            .shop-offers__cart-btn {
-                opacity: 1;
-            }
-        }
-    }
-    
+
     &__cart-btn {
         border: none;
         background-color: $color-black;

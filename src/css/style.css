@@ -300,83 +300,6 @@ body {
   transform: translateY(-0.5rem);
 }
 
-/* line 1, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
-.shop-offers {
-  margin: 12rem 0;
-}
-
-/* line 4, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
-.shop-offers__text {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* line 9, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
-.shop-offers__name {
-  font-size: 2rem;
-  text-transform: uppercase;
-  display: inline-block;
-}
-
-/* line 15, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
-.shop-offers__price {
-  display: inline-block;
-  font-size: 2rem;
-  color: #72AEC8;
-  letter-spacing: 3%;
-}
-
-/* line 22, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
-.shop-offers__cards {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* line 27, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
-.shop-offers__card {
-  display: inline-block;
-}
-
-/* line 31, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
-.shop-offers__img-box {
-  position: relative;
-  margin-bottom: 1rem;
-}
-
-/* line 36, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
-.shop-offers__img-box:hover .shop-offers__cart-btn {
-  opacity: 1;
-}
-
-/* line 42, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
-.shop-offers__cart-btn {
-  border: none;
-  background-color: #272727;
-  color: #FFFFFF;
-  width: 19.1rem;
-  height: 3.7rem;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: all 0.8s ease;
-}
-
-/* line 57, ../../../Desktop/project_ministore/src/scss/layout/_shop-offers.scss */
-.shop-offers__cart-btn::after {
-  content: "";
-  position: absolute;
-  right: 3rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1.6rem;
-  height: 1.6rem;
-  background: url("../icons/cart-button.svg") center/contain no-repeat;
-}
-
 /* line 2, ../../../Desktop/project_ministore/src/scss/layout/_discount-offer.scss */
 .discount-offer__container {
   background-color: #EDF1F3;
@@ -568,6 +491,73 @@ body {
   border-bottom: 0.1rem solid #72AEC8;
 }
 
+/* line 1, ../../../Desktop/project_ministore/src/scss/components/_product-card.scss */
+.product-card {
+  display: inline-block;
+  max-width: 31rem;
+}
+
+/* line 4, ../../../Desktop/project_ministore/src/scss/components/_product-card.scss */
+.product-card__img-box {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+/* line 9, ../../../Desktop/project_ministore/src/scss/components/_product-card.scss */
+.product-card__img-box:hover .product-card__cart-btn {
+  opacity: 1;
+}
+
+/* line 15, ../../../Desktop/project_ministore/src/scss/components/_product-card.scss */
+.product-card__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 20, ../../../Desktop/project_ministore/src/scss/components/_product-card.scss */
+.product-card__name {
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+/* line 26, ../../../Desktop/project_ministore/src/scss/components/_product-card.scss */
+.product-card__price {
+  display: inline-block;
+  font-size: 2rem;
+  color: #72AEC8;
+  letter-spacing: 3%;
+}
+
+/* line 33, ../../../Desktop/project_ministore/src/scss/components/_product-card.scss */
+.product-card__cart-btn {
+  border: none;
+  background-color: #272727;
+  color: #FFFFFF;
+  width: 19.1rem;
+  height: 3.7rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+/* line 48, ../../../Desktop/project_ministore/src/scss/components/_product-card.scss */
+.product-card__cart-btn::after {
+  content: "";
+  position: absolute;
+  right: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url("../icons/cart-button.svg") center/contain no-repeat;
+}
+
 /* line 2, ../../../Desktop/project_ministore/src/scss/components/_blockquote.scss */
 .blockquote__container {
   margin: 12rem 0;
@@ -726,7 +716,7 @@ body {
 .product-list {
   display: grid;
   grid-template-rows: max-content repeat(3, 1fr);
-  grid-template-columns: repeat(3, min-content), 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(min-content, 31rem));
   margin: 12rem 0rem;
   gap: 2rem;
 }
@@ -749,16 +739,41 @@ body {
 .product-list__sidebar {
   grid-column: 4 / 5;
   grid-row: 1 / -1;
+  padding-left: 2rem;
 }
 
-/* line 24, ../../../Desktop/project_ministore/src/scss/pages/_shop.scss */
+/* line 25, ../../../Desktop/project_ministore/src/scss/pages/_shop.scss */
+.sidebar > :not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+/* line 29, ../../../Desktop/project_ministore/src/scss/pages/_shop.scss */
+.sidebar h4 {
+  margin-bottom: 1rem;
+}
+
+/* line 33, ../../../Desktop/project_ministore/src/scss/pages/_shop.scss */
 .sidebar__category {
   display: flex;
   flex-direction: column;
 }
 
-/* line 30, ../../../Desktop/project_ministore/src/scss/pages/_shop.scss */
-.searchbar {
+/* line 39, ../../../Desktop/project_ministore/src/scss/pages/_shop.scss */
+.sidebar__link:link, .sidebar__link:visited {
+  margin-bottom: 0.8rem;
+  text-decoration: none;
+  color: #272727;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+/* line 46, ../../../Desktop/project_ministore/src/scss/pages/_shop.scss */
+.sidebar__link:hover {
+  color: #72AEC8;
+}
+
+/* line 53, ../../../Desktop/project_ministore/src/scss/pages/_shop.scss */
+.searchbar__btn {
   width: 5.3rem;
   height: 5.3rem;
   background-color: #272727;
