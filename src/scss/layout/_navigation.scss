@@ -20,9 +20,9 @@
     
     &__link {
         text-decoration: none;
-        transition: all 0.3s;
+        transition: all 0.3s ease;
         
-        &:active,
+        &:link,
         &:visited {
             color: $color-black;
         }

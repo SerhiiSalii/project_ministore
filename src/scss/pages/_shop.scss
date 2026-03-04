@@ -1,7 +1,7 @@
 .product-list {
     display: grid;
     grid-template-rows: max-content repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fill, minmax(min-content, 31rem));
+    grid-template-columns: repeat(auto-fill, minmax(auto, 31rem));
     margin: 12rem 0rem;
     gap: 2rem;
     &__info {
@@ -42,6 +42,7 @@
             color: $color-black;
             font-size: 1.6rem;
             text-transform: capitalize;
+            transition: all .3s ease;
         }
         &:hover {
             color: $color-blue;
@@ -54,5 +55,12 @@
         width: 5.3rem;
         height: 5.3rem;
         background-color: $color-black;
+        border: none;
+        &:hover {
+            cursor: pointer;
+        }
+        &:active {
+            transform: translateY(.1rem);
+        }
     }
 }

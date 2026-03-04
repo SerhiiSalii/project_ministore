@@ -228,11 +228,11 @@ body {
 /* line 21, ../../../Desktop/project_ministore/src/scss/layout/_navigation.scss */
 .navigation__link {
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
 /* line 25, ../../../Desktop/project_ministore/src/scss/layout/_navigation.scss */
-.navigation__link:active, .navigation__link:visited {
+.navigation__link:link, .navigation__link:visited {
   color: #272727;
 }
 
@@ -716,7 +716,7 @@ body {
 .product-list {
   display: grid;
   grid-template-rows: max-content repeat(3, 1fr);
-  grid-template-columns: repeat(auto-fill, minmax(min-content, 31rem));
+  grid-template-columns: repeat(auto-fill, minmax(auto, 31rem));
   margin: 12rem 0rem;
   gap: 2rem;
 }
@@ -765,18 +765,30 @@ body {
   color: #272727;
   font-size: 1.6rem;
   text-transform: capitalize;
+  transition: all .3s ease;
 }
 
-/* line 46, ../../../Desktop/project_ministore/src/scss/pages/_shop.scss */
+/* line 47, ../../../Desktop/project_ministore/src/scss/pages/_shop.scss */
 .sidebar__link:hover {
   color: #72AEC8;
 }
 
-/* line 53, ../../../Desktop/project_ministore/src/scss/pages/_shop.scss */
+/* line 54, ../../../Desktop/project_ministore/src/scss/pages/_shop.scss */
 .searchbar__btn {
   width: 5.3rem;
   height: 5.3rem;
   background-color: #272727;
+  border: none;
+}
+
+/* line 59, ../../../Desktop/project_ministore/src/scss/pages/_shop.scss */
+.searchbar__btn:hover {
+  cursor: pointer;
+}
+
+/* line 62, ../../../Desktop/project_ministore/src/scss/pages/_shop.scss */
+.searchbar__btn:active {
+  transform: translateY(0.1rem);
 }
 
 /*# sourceMappingURL=style.css.map */
