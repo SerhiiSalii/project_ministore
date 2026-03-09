@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,15 +44,86 @@
                     <h3 class="title-h3">
                         Billing Details
                     </h3>
+                    <form action="#" method="post">
+                        <div class="">
+                            <label>
+                                First name *
+                                <input type="text" name="first_name" required>
+                            </label>
+                        </div>
+                        <div class="div">
+                            <label>
+                                Last name *
+                                <input type="text" name="last_name" disabled>
+                            </label>
+                        </div>
+                        <div class="">
+                            <label>
+                                Company name (optional)
+                                <input type="text" name="company_name">
+                            </label>
+                        </div>
+                        <label>
+                            Country / Region *
+                            <input type="text" name="country_region">
+                        </label>
+                        <label>
+                            Street address *
+                            <input type="text" name="adress">
+                            <input type="text" name="appartmants">
+                        </label>
+                        <label>
+                            Town / City *
+                            <input type="text" name="town_city">
+                        </label>
+                        <label>
+                            State *
+                            <input type="text" name="state">
+                        </label>
+                        <label>
+                            ZIP Code *
+                            <input type="text" name="zip_code">
+                        </label>
+                        <label>
+                            Phone *
+                            <input type="tel" name="phone">
+                        </label>
+                        <label>
+                            Email adress *
+                            <input type="email" name="email_adress">
+                        </label>
+                    </form>
                 </div>
                 <div class="additional-block">
                     <h3 class="title-h3">
                         Additional Information
                     </h3>
+                    <label>
+                            Order notes (optional)
+                            <input type="text" name="order_notes">
+                    </label>
                 </div>
             </div>
-            <div class="cart-block">
-                
+            <div class="cart-block container">
+                <div class="">
+                    <label>
+                        <input type="radio" name="paymant" value="direct_bank_transfer" checked>
+                        Direct bank transfer
+                    </label>
+                    <label>
+                        <input type="radio" name="paymant" value="check_payments">
+                        Check payments
+                    </label>
+                    <label>
+                        <input type="radio" name="paymant" value="cash">
+                        Cash on delivery
+                    </label>
+                    <label>
+                        <input type="radio" name="paymant" value="paypal">
+                        PayPal
+                    </label>
+                </div>
+                <button class="btn" type="submit">Place an order</button>
             </div>
         </section>
     </main>
