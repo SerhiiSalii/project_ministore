@@ -1,0 +1,41 @@
+.checkout {
+    &__container {
+        padding-top: 12rem;
+    } 
+    &__title {
+        margin-bottom: 3rem;
+    }
+    &__form-field {
+        margin-bottom: 3rem;
+    }
+    &__form-radio {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    &__label {
+        font-size: 1.6rem;
+        color: $color-gray-dark;
+        letter-spacing: 3%;
+        font-weight: 200;
+    }
+    &__input {
+        box-sizing: border-box;
+        max-width: 60rem;
+        min-height: 4rem;
+        // box-shadow: none;
+        // outline: none;
+        // appearance: none;
+        // border-color: $color-gray-border;
+        border-color: red;
+        &:placeholder-shown {
+            font-weight: 200;
+            padding: 1rem;
+        }
+    }
+}

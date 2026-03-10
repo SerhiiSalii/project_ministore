@@ -40,90 +40,81 @@
         </div>
         <section class="checkout">
             <div class="checkout__container container">
-                <div class="billing-block">
-                    <h3 class="title-h3">
+                <div class="checkout__billing-block">
+                    <h3 class="checkout__title title-h3">
                         Billing Details
                     </h3>
-                    <form action="#" method="post">
-                        <div class="">
-                            <label>
-                                First name *
-                                <input type="text" name="first_name" required>
-                            </label>
+                    <form action="#" method="post" id="checkout-form">
+                        <div class="checkout__form-field form-field">
+                            <label for="first-name" class="form-field__label">First name *</label>
+                            <input type="text" class="form-field__input" name="first-name" required>
                         </div>
-                        <div class="div">
-                            <label>
-                                Last name *
-                                <input type="text" name="last_name" disabled>
-                            </label>
+                        <div class="checkout__form-field form-field">
+                            <label for="last-name"  class="form-field__label">Last name *</label>
+                            <input type="text" class="form-field__input" name="last_name" required>
                         </div>
-                        <div class="">
-                            <label>
-                                Company name (optional)
-                                <input type="text" name="company_name">
-                            </label>
+                        <div class="checkout__form-field form-field">
+                            <label for="company-name" class="form-field__label">Company name (optional)</label>
+                            <input type="text" class="form-field__input" name="company-name">
                         </div>
-                        <label>
-                            Country / Region *
-                            <input type="text" name="country_region">
-                        </label>
-                        <label>
-                            Street address *
-                            <input type="text" name="adress">
-                            <input type="text" name="appartmants">
-                        </label>
-                        <label>
-                            Town / City *
-                            <input type="text" name="town_city">
-                        </label>
-                        <label>
-                            State *
-                            <input type="text" name="state">
-                        </label>
-                        <label>
-                            ZIP Code *
-                            <input type="text" name="zip_code">
-                        </label>
-                        <label>
-                            Phone *
-                            <input type="tel" name="phone">
-                        </label>
-                        <label>
-                            Email adress *
-                            <input type="email" name="email_adress">
-                        </label>
+                        <div class="checkout__form-field form-field">
+                            <label for="country" class="form-field__label">Country / Region *</label>
+                            <input type="text" class="form-field__input" name="country" required>
+                        </div>
+                        <div class="checkout__form-field form-field">
+                            <label for="address" class="form-field__label">Street address *</label>
+                            <input type="text" class="form-field__input" name="adress" required>
+                            <input type="text" class="form-field__input" name="appartmants" required>
+                        </div>
+                        <div class="checkout__form-field form-field">
+                            <label for="city" class="form-field__label">Town / City *</label>
+                            <input type="text" class="form-field__input" name="city" required>
+                        </div>
+                        <div class="checkout__form-field form-field">
+                            <label for="state" class="form-field__label">State *</label>
+                            <input type="text" class="form-field__input" name="state" required>
+                        </div>
+                        <div class="checkout__form-field form-field">
+                            <label for="zip-code" class="form-field__label">ZIP Code *</label>
+                            <input type="text" class="form-field__input" name="zip-code" required>
+                        </div>
+                        <div class="checkout__form-field form-field">
+                            <label for="phone" class="form-field__label">Phone *</label>
+                            <input type="tel" class="form-field__input" name="phone" required>
+                        </div>
+                        <div class="checkout__form-field form-field">
+                            <label for="email" class="form-field__label">Email adress *</label>
+                            <input type="email" class="form-field__input" name="email" required>
+                        </div>
                     </form>
                 </div>
-                <div class="additional-block">
-                    <h3 class="title-h3">
+                <div class="checkout__additional-block">
+                    <h3 class="checkout__title title-h3">
                         Additional Information
                     </h3>
-                    <label>
-                            Order notes (optional)
-                            <input type="text" name="order_notes">
-                    </label>
+                    <div class="form-field">
+                        <label for="notes" class="form-field__label">Order notes (optional)</label>
+                        <input type="text" class="form-field__input" placeholder="Notes about your order. Like special notes for delivery." name="notes">
+                    </div>
                 </div>
-            </div>
-            <div class="cart-block container">
-                <div class="">
-                    <label>
-                        <input type="radio" name="paymant" value="direct_bank_transfer" checked>
-                        Direct bank transfer
-                    </label>
-                    <label>
+                <div class="checkout__cart-block">
+                    <h3 class="checkout__title title-h3">Cart totals</h3>
+                    <!-- <div class="cart"></div> -->
+                    <div class="checkout__form-radio form-radio">
+                        <input type="radio" name="paymant" value="direct_bank_transfer" checked>                        
+                        <label for="radio">Direct bank transfer</label>
+
                         <input type="radio" name="paymant" value="check_payments">
-                        Check payments
-                    </label>
-                    <label>
+                        <label for="radio">Check payments</label>
+
                         <input type="radio" name="paymant" value="cash">
-                        Cash on delivery
-                    </label>
-                    <label>
+                        <label for="radio">Cash on delivery</label>
+
                         <input type="radio" name="paymant" value="paypal">
-                        PayPal
-                    </label>
+                        <label for="radio"> PayPal</label>
+                    </div>
+                    <button class="btn" type="submit" form="checkout-form">Place an order</button>
                 </div>
-                <button class="btn" type="submit">Place an order</button>
             </div>
         </section>
     </main>

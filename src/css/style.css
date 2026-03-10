@@ -791,4 +791,54 @@ body {
   transform: translateY(0.1rem);
 }
 
+/* line 2, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
+.checkout__container {
+  padding-top: 12rem;
+}
+
+/* line 5, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
+.checkout__title {
+  margin-bottom: 3rem;
+}
+
+/* line 8, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
+.checkout__form-field {
+  margin-bottom: 3rem;
+}
+
+/* line 11, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
+.checkout__form-radio {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 17, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* line 21, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
+.form-field__label {
+  font-size: 1.6rem;
+  color: #3A3A3A;
+  letter-spacing: 3%;
+  font-weight: 200;
+}
+
+/* line 27, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
+.form-field__input {
+  box-sizing: border-box;
+  max-width: 60rem;
+  min-height: 4rem;
+  border-color: red;
+}
+
+/* line 36, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
+.form-field__input:placeholder-shown {
+  font-weight: 200;
+  padding: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
