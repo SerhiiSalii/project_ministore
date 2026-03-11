@@ -6,12 +6,12 @@ html {
 /* line 5, ../../../Desktop/project_ministore/src/scss/base/_base.scss */
 body {
   font-family: "Lato", sans-serif;
+  box-sizing: border-box;
 }
 
-/* line 9, ../../../Desktop/project_ministore/src/scss/base/_base.scss */
+/* line 10, ../../../Desktop/project_ministore/src/scss/base/_base.scss */
 .container {
   padding: 0rem 31rem;
-  box-sizing: border-box;
 }
 
 /* line 1, ../../../Desktop/project_ministore/src/scss/base/_typograpghy.scss */
@@ -683,6 +683,63 @@ body {
   display: none;
 }
 
+/* line 1, ../../../Desktop/project_ministore/src/scss/components/_form-field.scss */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* line 5, ../../../Desktop/project_ministore/src/scss/components/_form-field.scss */
+.form-field__label {
+  font-size: 1.6rem;
+  color: #3A3A3A;
+  letter-spacing: 3%;
+  font-weight: 200;
+}
+
+/* line 11, ../../../Desktop/project_ministore/src/scss/components/_form-field.scss */
+.form-field__input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 4rem;
+  border: solid #D9D9D9 0.1rem;
+  padding-left: 2rem;
+}
+
+/* line 17, ../../../Desktop/project_ministore/src/scss/components/_form-field.scss */
+.form-field__input:placeholder-shown {
+  font-weight: 200;
+}
+
+/* line 21, ../../../Desktop/project_ministore/src/scss/components/_form-field.scss */
+.form-field--half {
+  width: 48%;
+}
+
+/* line 1, ../../../Desktop/project_ministore/src/scss/components/_radio-field.scss */
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* line 5, ../../../Desktop/project_ministore/src/scss/components/_radio-field.scss */
+.radio > * {
+  cursor: pointer;
+}
+
+/* line 8, ../../../Desktop/project_ministore/src/scss/components/_radio-field.scss */
+.radio__text {
+  font-size: 1.6rem;
+  color: #3A3A3A;
+}
+
+/* line 12, ../../../Desktop/project_ministore/src/scss/components/_radio-field.scss */
+.radio > input {
+  accent-color: #72AEC8;
+}
+
 /* line 1, ../../../Desktop/project_ministore/src/scss/pages/_about.scss */
 .content {
   display: flex;
@@ -797,48 +854,63 @@ body {
 }
 
 /* line 5, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
+.checkout__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 9, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
 .checkout__title {
   margin-bottom: 3rem;
 }
 
-/* line 8, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
+/* line 12, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
 .checkout__form-field {
   margin-bottom: 3rem;
 }
 
-/* line 11, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
+/* line 15, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
 .checkout__form-radio {
   display: flex;
   flex-direction: column;
-}
-
-/* line 17, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
-.form-field {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 /* line 21, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
-.form-field__label {
-  font-size: 1.6rem;
-  color: #3A3A3A;
-  letter-spacing: 3%;
-  font-weight: 200;
+.checkout__cart-block {
+  margin-bottom: 12rem;
 }
 
-/* line 27, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
-.form-field__input {
-  box-sizing: border-box;
-  max-width: 60rem;
-  min-height: 4rem;
-  border-color: red;
+/* line 25, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
+.checkout__billing-block {
+  width: 49%;
 }
 
-/* line 36, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
-.form-field__input:placeholder-shown {
-  font-weight: 200;
-  padding: 1rem;
+/* line 30, ../../../Desktop/project_ministore/src/scss/pages/_checkout.scss */
+.checkout__additional-block {
+  width: 49%;
+}
+
+/* line 2, ../../../Desktop/project_ministore/src/scss/pages/_contact.scss */
+.contact__container {
+  padding-top: 12rem;
+}
+
+/* line 5, ../../../Desktop/project_ministore/src/scss/pages/_contact.scss */
+.contact__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 10, ../../../Desktop/project_ministore/src/scss/pages/_contact.scss */
+.contact__info {
+  width: 49%;
+}
+
+/* line 13, ../../../Desktop/project_ministore/src/scss/pages/_contact.scss */
+.contact__form {
+  width: 49%;
 }
 
 /*# sourceMappingURL=style.css.map */

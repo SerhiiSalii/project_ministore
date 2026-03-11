@@ -2,6 +2,10 @@
     &__container {
         padding-top: 12rem;
     } 
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
     &__title {
         margin-bottom: 3rem;
     }
@@ -11,31 +15,20 @@
     &__form-radio {
         display: flex;
         flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+    &__cart-block {
+        margin-bottom: 12rem;
+    }
+
+    &__billing-block {
+        // min-width: 64rem;
+        width: 49%;
+    }
+
+    &__additional-block {
+        width: 49%;
     }
 }
 
-.form-field {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    &__label {
-        font-size: 1.6rem;
-        color: $color-gray-dark;
-        letter-spacing: 3%;
-        font-weight: 200;
-    }
-    &__input {
-        box-sizing: border-box;
-        max-width: 60rem;
-        min-height: 4rem;
-        // box-shadow: none;
-        // outline: none;
-        // appearance: none;
-        // border-color: $color-gray-border;
-        border-color: red;
-        &:placeholder-shown {
-            font-weight: 200;
-            padding: 1rem;
-        }
-    }
-}

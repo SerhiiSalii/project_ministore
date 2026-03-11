@@ -1,0 +1,17 @@
+.contact {
+    &__container {
+        padding-top: 12rem;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        width: 49%;
+    }
+    &__form {
+        width: 49%;
+    }
+
+}

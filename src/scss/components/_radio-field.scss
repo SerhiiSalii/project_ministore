@@ -1,0 +1,15 @@
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    & > * {
+        cursor: pointer;
+    }
+    &__text {
+        font-size: 1.6rem;
+        color: $color-gray-dark;
+    }
+    & > input {
+        accent-color: $color-blue;
+    }
+}
