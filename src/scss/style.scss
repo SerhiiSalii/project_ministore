@@ -12,6 +12,7 @@
 @import "layout/related-posts.scss";
 @import "layout/instagram-showcase.scss";
 @import "layout/top-section.scss";
+@import "layout/feedback-form.scss";
 
 @import "components/product-card.scss";
 @import "components/blockquote.scss";
@@ -24,6 +25,17 @@
 @import "pages/shop.scss";
 @import "pages/checkout.scss";
 @import "pages/contact.scss";
+@import "pages/blog-post.scss";
+
+
+
+// .feedback-form {
+//     &__fields {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//     }
+// }
 
 
 

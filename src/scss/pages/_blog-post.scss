@@ -1,0 +1,13 @@
+.post {
+    &__container {
+        margin-top: 12rem;
+    }
+}
+
+.feedbacks {
+    &__box {
+        &:nth-child(even) {
+        padding-left: 8rem;
+    }
+    }
+}

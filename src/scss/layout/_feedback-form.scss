@@ -1,0 +1,7 @@
+.feedback-form {
+    &__fields {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
