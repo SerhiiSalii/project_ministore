@@ -1,7 +1,21 @@
 .feedback-form {
+    &__title {
+        margin-bottom: 3rem;
+    }
+    &__label {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        color: $color-gray-dark;
+        font-weight: 200;
+    }
     &__fields {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 2rem;
+    }
+
+    & div {
+        margin-bottom: 2rem;
     }
 }

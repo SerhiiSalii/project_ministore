@@ -2,12 +2,30 @@
     &__container {
         margin-top: 12rem;
     }
+    &__date {
+        font-size: 1.3rem;
+        color: $color-gray-medium;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin-bottom: 3rem;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        margin: 3rem 0;
+        color: $color-gray-medium;
+    }
 }
 
-.feedbacks {
-    &__box {
+.feedbacks-section {
+    margin-bottom: 4rem;
+    &__item {
         &:nth-child(even) {
         padding-left: 8rem;
     }
     }
 }
+

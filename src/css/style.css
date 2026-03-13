@@ -493,10 +493,29 @@ body {
 }
 
 /* line 2, ../../../Desktop/project_ministore/src/scss/layout/_feedback-form.scss */
+.feedback-form__title {
+  margin-bottom: 3rem;
+}
+
+/* line 5, ../../../Desktop/project_ministore/src/scss/layout/_feedback-form.scss */
+.feedback-form__label {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #3A3A3A;
+  font-weight: 200;
+}
+
+/* line 11, ../../../Desktop/project_ministore/src/scss/layout/_feedback-form.scss */
 .feedback-form__fields {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 2rem;
+}
+
+/* line 18, ../../../Desktop/project_ministore/src/scss/layout/_feedback-form.scss */
+.feedback-form div {
+  margin-bottom: 2rem;
 }
 
 /* line 1, ../../../Desktop/project_ministore/src/scss/components/_product-card.scss */
@@ -748,6 +767,26 @@ body {
   accent-color: #72AEC8;
 }
 
+/* line 1, ../../../Desktop/project_ministore/src/scss/components/_checkbox-field.scss */
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* line 5, ../../../Desktop/project_ministore/src/scss/components/_checkbox-field.scss */
+.form-checkbox__input {
+  border: solid .1rem #CCCCCC;
+  border-radius: 1rem;
+}
+
+/* line 9, ../../../Desktop/project_ministore/src/scss/components/_checkbox-field.scss */
+.form-checkbox__text {
+  font-size: 1.6rem;
+  color: #3A3A3A;
+  font-weight: 200;
+}
+
 /* line 1, ../../../Desktop/project_ministore/src/scss/pages/_about.scss */
 .content {
   display: flex;
@@ -992,8 +1031,33 @@ body {
   margin-top: 12rem;
 }
 
-/* line 9, ../../../Desktop/project_ministore/src/scss/pages/_blog-post.scss */
-.feedbacks__box:nth-child(even) {
+/* line 5, ../../../Desktop/project_ministore/src/scss/pages/_blog-post.scss */
+.post__date {
+  font-size: 1.3rem;
+  color: #848484;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+/* line 12, ../../../Desktop/project_ministore/src/scss/pages/_blog-post.scss */
+.post__title {
+  margin-bottom: 3rem;
+}
+
+/* line 16, ../../../Desktop/project_ministore/src/scss/pages/_blog-post.scss */
+.post__text {
+  font-size: 1.6rem;
+  margin: 3rem 0;
+  color: #848484;
+}
+
+/* line 23, ../../../Desktop/project_ministore/src/scss/pages/_blog-post.scss */
+.feedbacks-section {
+  margin-bottom: 4rem;
+}
+
+/* line 26, ../../../Desktop/project_ministore/src/scss/pages/_blog-post.scss */
+.feedbacks-section__item:nth-child(even) {
   padding-left: 8rem;
 }
 

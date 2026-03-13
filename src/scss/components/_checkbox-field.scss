@@ -1,0 +1,14 @@
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    &__input {
+        border: solid .1rem #CCCCCC;
+        border-radius: 1rem;
+    }
+    &__text {
+        font-size: 1.6rem;
+        color: $color-gray-dark;
+        font-weight: 200    ;
+    }
+}
