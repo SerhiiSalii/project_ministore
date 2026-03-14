@@ -1,9 +1,13 @@
 .hero-banner {
     &__container {
         background: $color-gray;
-        padding: 10rem 31rem;
+        padding: 15rem 31rem;
         position: relative;
         min-height: 61rem;
+    }
+
+    &__title {
+        margin-bottom: 4rem;
     }
     
     &__img {

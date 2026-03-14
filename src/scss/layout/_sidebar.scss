@@ -1,0 +1,71 @@
+.sidebar {
+    & > :not(:last-child) {
+        margin-bottom: 4rem;
+    }
+
+    & h4 {
+        margin-bottom: 1rem;
+    }
+
+    &__category {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__post {
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+        margin-bottom: 1rem;
+    }
+
+    &__post-title {
+        &:link, &:visited {
+            text-decoration: none;
+            color: $color-black;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            transition: all .3s ease;
+        }
+        &:hover {
+            color: $color-blue;
+        }
+    }
+
+    &__link {
+        &:link, &:visited { 
+            margin-bottom: 0.8rem;
+            text-decoration: none;
+            color: $color-black;
+            font-size: 1.6rem;
+            text-transform: capitalize;
+            transition: all .3s ease;
+        }
+        &:hover {
+            color: $color-blue;
+        }
+    }
+}
+
+.searchbar {
+    display: flex;
+    box-shadow: .1rem .1rem .5rem $color-gray;
+    &__input {
+        width: 100%;
+        height: 5.3rem;
+        padding-left: 2rem;
+        border: .1rem solid $color-gray;
+    }
+    &__btn {
+        width: 5.3rem;
+        height: 5.3rem;
+        background-color: $color-black;
+        border: none;
+        &:hover {
+            cursor: pointer;
+        }
+        &:active {
+            transform: translateY(.1rem);
+        }
+    }
+}

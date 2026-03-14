@@ -19,13 +19,3 @@
         color: $color-gray-medium;
     }
 }
-
-.feedbacks-section {
-    margin-bottom: 4rem;
-    &__item {
-        &:nth-child(even) {
-        padding-left: 8rem;
-    }
-    }
-}
-

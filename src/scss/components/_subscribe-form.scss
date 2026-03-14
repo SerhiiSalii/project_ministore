@@ -21,17 +21,15 @@
     }
     
     &__input {
-        display: inline-block;
+        box-sizing: border-box;
         height: 5rem;
         width: 33rem;
         border: none;
-        padding: 0;
-        transform: translateX(0.5rem);
+        padding-left: 2rem;
         
         &::placeholder {
             font-size: 1.6rem;
             letter-spacing: 3%;
-            text-align: center;
         }
     }
     
@@ -47,6 +45,6 @@
     }
     
     form {
-        text-align: right;
+        display: flex;
     }
 }

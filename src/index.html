@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ministore</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,8 +32,8 @@
         </div>
     </header>
     <main>
-        <section class="hero-banner">
-            <div class="hero-banner__container container">
+        <div class="hero-banner">
+            <div class="hero-banner__container ">
                 <h1 class="hero-banner__title title-h1 title-h1--hero">
                     Your Products are great.
                 </h1>
@@ -42,139 +42,133 @@
                 </a>
                 <img class="hero-banner__img" src="img/watches_main_banner.png" alt="watches">
             </div>
-        </section>
-        <section class="showcase">
-            <div class="showcase__container container">
-                <div class="advantages">
-                    <div class="advantages__card">
-                        <img src="icons/cart-blue.svg" alt="cart" class="advantages__img">
-                        <h3 class="advantages__title">Free delivery</h3>
-                        <p class="advantages__text">
-                            Consectetur adipi elit lorem ipsum dolor sit amet.
-                        </p>
+        </div>
+        <div class="container">
+            <div class="advantages">
+                <div class="advantages__card">
+                    <img src="../icons/cart-blue.svg" alt="cart" class="advantages__img">
+                    <h3 class="advantages__title">Free delivery</h3>
+                    <p class="advantages__text">
+                        Consectetur adipi elit lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="advantages__card">
+                    <img src="../icons/prize.svg" alt="prize" class="advantages__img">
+                    <h3 class="advantages__title">Quality guarantee</h3>
+                    <p class="advantages__text">
+                        Consectetur adipi elit lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="advantages__card">
+                    <img src="../icons/label.svg" alt="label" class="advantages__img">
+                    <h3 class="advantages__title">Daily offers</h3>
+                    <p class="advantages__text">
+                        Consectetur adipi elit lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="advantages__card">
+                    <img src="../icons/shield.svg" alt="shield" class="advantages__img">
+                    <h3 class="advantages__title">100% secure payment</h3>
+                    <p class="advantages__text">
+                        Consectetur adipi elit lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div> 
+            <div class="home-products">
+                <div class="home-products__head">
+                    <h3 class="home-products__title title-h3">Mobile Products</h3>
+                    <a class="home-products__link" href="/">Go to shop</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__img-box">
+                        <img class="product-card__img" src="../img/watch-1.png" alt="phone">
+                        <button type="button" class="product-card__cart-btn">Add to cart</button>
                     </div>
-                    <div class="advantages__card">
-                        <img src="icons/prize.svg" alt="prize" class="advantages__img">
-                        <h3 class="advantages__title">Quality guarantee</h3>
-                        <p class="advantages__text">
-                            Consectetur adipi elit lorem ipsum dolor sit amet.
-                        </p>
-                    </div>
-                    <div class="advantages__card">
-                        <img src="icons/label.svg" alt="label" class="advantages__img">
-                        <h3 class="advantages__title">Daily offers</h3>
-                        <p class="advantages__text">
-                            Consectetur adipi elit lorem ipsum dolor sit amet.
-                        </p>
-                    </div>
-                    <div class="advantages__card">
-                        <img src="icons/shield.svg" alt="shield" class="advantages__img">
-                        <h3 class="advantages__title">100% secure payment</h3>
-                        <p class="advantages__text">
-                            Consectetur adipi elit lorem ipsum dolor sit amet.
-                        </p>
+                    <div class="product-card__info">
+                        <p class="product-card__name">Pink Watch</p>
+                        <p class="product-card__price">$870</p>
                     </div>
                 </div>
-
-                <div class="shop-offers">
-                    <div class="title-container">
-                        <h3 class="title-container__heading title-h3">Mobile Products</h3>
-                        <a class="title-container__link" href="/">Go to shop</a>
+                <div class="product-card">
+                    <div class="product-card__img-box">
+                        <img class="product-card__img" src="../img/watch-1.png" alt="phone">
+                        <button type="button" class="product-card__cart-btn">Add to cart</button>
                     </div>
-                    <div class="shop-offers__cards">
-                        <div class="shop-offers__card">
-                            <div class="shop-offers__img-box">
-                                <img class="shop-offers__img" src="img/phone-1.png" alt="phone">
-                                <button class="shop-offers__cart-btn">Add to cart</button>
-                            </div>
-                            <div class="shop-offers__text">
-                                <p class="shop-offers__name">Iphone 10</p>
-                                <p class="shop-offers__price">$980</p>
-                            </div>
-                        </div>
-                        <div class="shop-offers__card">
-                            <div class="shop-offers__img-box">
-                                <img class="shop-offers__img" src="img/phone-2.png" alt="phone">
-                                <button class="shop-offers__cart-btn">Add to cart</button>
-                            </div>
-                            <div class="shop-offers__text">
-                                <p class="shop-offers__name">Iphone 11</p>
-                                <p class="shop-offers__price">$1100</p>
-                            </div>
-                        </div>
-                        <div class="shop-offers__card">
-                            <div class="shop-offers__img-box">
-                                <img class="shop-offers__img" src="img/phone-3.png" alt="phone">
-                                <button class="shop-offers__cart-btn">Add to cart</button>
-                            </div>
-                            <div class="shop-offers__text">
-                                <p class="shop-offers__name">Iphone 8</p>
-                                <p class="shop-offers__price">$780</p>
-                            </div>
-                        </div>
-                        <div class="shop-offers__card">
-                            <div class="shop-offers__img-box">
-                                <img class="shop-offers__img" src="img/phone-4.png" alt="phone">
-                                <button class="shop-offers__cart-btn">Add to cart</button>
-                            </div>
-                            <div class="shop-offers__text">
-                                <p class="shop-offers__name">Iphone 13</p>
-                                <p class="shop-offers__price">$1500</p>
-                            </div>
-                        </div>
-                    </div>                        
+                    <div class="product-card__info">
+                        <p class="product-card__name">Pink Watch</p>
+                        <p class="product-card__price">$870</p>
+                    </div>
                 </div>
-                <div class="shop-offers">
-                    <div class="title-container">
-                        <h3 class="title-container__heading title-h3">Smart Watches</h3>
-                        <a class="title-container__link" href="/">Go to shop</a>
+                <div class="product-card">
+                    <div class="product-card__img-box">
+                        <img class="product-card__img" src="../img/watch-1.png" alt="phone">
+                        <button type="button" class="product-card__cart-btn">Add to cart</button>
                     </div>
-                    <div class="shop-offers__cards">
-                        <div class="shop-offers__card">
-                            <div class="shop-offers__img-box">
-                                <img class="shop-offers__img" src="img/watch-1.png" alt="phone">
-                                <button class="shop-offers__cart-btn">Add to cart</button>
-                            </div>
-                            <div class="shop-offers__text">
-                                <p class="shop-offers__name">Pink Watch</p>
-                                <p class="shop-offers__price">$870</p>
-                            </div>
-                        </div>
-                        <div class="shop-offers__card">
-                            <div class="shop-offers__img-box">
-                                <img class="shop-offers__img" src="img/watch-2.png" alt="phone">
-                                <button class="shop-offers__cart-btn">Add to cart</button>
-                            </div>
-                            <div class="shop-offers__text">
-                                <p class="shop-offers__name">heavy watch</p>
-                                <p class="shop-offers__price">$680</p>
-                            </div>
-                        </div>
-                        <div class="shop-offers__card">
-                            <div class="shop-offers__img-box">
-                                <img class="shop-offers__img" src="img/watch-3.png" alt="phone">
-                                <button class="shop-offers__cart-btn">Add to cart</button>
-                            </div>
-                            <div class="shop-offers__text">
-                                <p class="shop-offers__name">spotted watch</p>
-                                <p class="shop-offers__price">$750</p>
-                            </div>
-                        </div>
-                        <div class="shop-offers__card">
-                            <div class="shop-offers__img-box">
-                                <img class="shop-offers__img" src="img/watch-4.png" alt="phone">
-                                <button class="shop-offers__cart-btn">Add to cart</button>
-                            </div>
-                            <div class="shop-offers__text">
-                                <p class="shop-offers__name">black-watch</p>
-                                <p class="shop-offers__price">$650</p>
-                            </div>
-                        </div>
-                    </div>                        
+                    <div class="product-card__info">
+                        <p class="product-card__name">Pink Watch</p>
+                        <p class="product-card__price">$870</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__img-box">
+                        <img class="product-card__img" src="../img/watch-1.png" alt="phone">
+                        <button type="button" class="product-card__cart-btn">Add to cart</button>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__name">Pink Watch</p>
+                        <p class="product-card__price">$870</p>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="discount-offer">
+            <div class="home-products">
+                <div class="home-products__head">
+                    <h3 class="home-products__title title-h3">Mobile Products</h3>
+                    <a class="home-products__link" href="/">Go to shop</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__img-box">
+                        <img class="product-card__img" src="../img/watch-1.png" alt="phone">
+                        <button type="button" class="product-card__cart-btn">Add to cart</button>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__name">Pink Watch</p>
+                        <p class="product-card__price">$870</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__img-box">
+                        <img class="product-card__img" src="../img/watch-1.png" alt="phone">
+                        <button type="button" class="product-card__cart-btn">Add to cart</button>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__name">Pink Watch</p>
+                        <p class="product-card__price">$870</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__img-box">
+                        <img class="product-card__img" src="../img/watch-1.png" alt="phone">
+                        <button type="button" class="product-card__cart-btn">Add to cart</button>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__name">Pink Watch</p>
+                        <p class="product-card__price">$870</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__img-box">
+                        <img class="product-card__img" src="../img/watch-1.png" alt="phone">
+                        <button type="button" class="product-card__cart-btn">Add to cart</button>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__name">Pink Watch</p>
+                        <p class="product-card__price">$870</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="discount-offer">
             <div class="discount-offer__container container">
                 <div class="discount-offer__info">
                     <p class="discount-offer__subtitle">10% off</p>
@@ -183,49 +177,37 @@
                 </div>                
                 <img class="discount-offer__img" src="img/discount-block-phone.png" alt="phone">
             </div>
-            </section>
-        <section class="related-posts">
-            <div class="related-posts__container container">
-                <div class="title-container">
-                    <h3 class="title-container__heading title-h3">Latest posts</h3>
-                    <a class="title-container__link" href="/">read blogs</a>
+        </div>
+        <div class="container">
+            <div class="related-posts">
+                <div class="related-posts__head">
+                    <h3 class="title-h3">Latest posts</h3>
+                    <a class="related-posts__link" href="/">read blogs</a>
                 </div>
-                <div class="related-posts__content">
-                    <div class="related-posts__card">
-                        <a href="#">
-                            <img src="img/blog-post-1.png" alt="" class="related-posts__img">
-                        </a>
-                        <div class="related-posts__info">
-                            <p class="related-posts__date">feb 22, 2023</p>
-                            <p class="related-posts__category">Gadgets</p>
-                        </div>
-                        <a href="#" class="related-posts__post-title">Get some cool gadgets in 2023</a>
-                    </div>
-                    <div class="related-posts__card">
-                        <a href="#">
-                            <img src="img/blog-post-2.png" alt="" class="related-posts__img">
-                        </a>
-                        <div class="related-posts__info">
-                            <p class="related-posts__date">feb 22, 2023</p>
-                            <p class="related-posts__category">Technology</p>
-                        </div>
-                        <a href="#" class="related-posts__post-title">TECHNOLOGY HACK YOU WON’T GET</a>
-                    </div>
-                    <div class="related-posts__card">
-                        <a href="#">
-                            <img src="img/blog-post-3.png" alt="" class="related-posts__img">
-                        </a>
-                        <div class="related-posts__info">
-                            <p class="related-posts__date">feb 22, 2023</p>
-                            <p class="related-posts__category">Camera</p>
-                        </div>
-                        <a href="#" class="related-posts__post-title">toP 10 SMALL cAMERA IN THE WORLD</a>
-                    </div>
-                </div>                
+                <div class="post-card">
+                    <a href="#">
+                        <img src="../img/blog-post-1.png" alt="" class="post-card__img">
+                    </a>
+                    <p class="post-card__date">feb 22, 2021 - Gadgets</p>
+                    <a href="#" class="post-card__title">Get some cool gadgets in 2023</a>
+                </div>
+                <div class="post-card">
+                    <a href="#">
+                        <img src="../img/blog-post-1.png" alt="" class="post-card__img">
+                    </a>
+                    <p class="post-card__date">feb 22, 2021 - Gadgets</p>
+                    <a href="#" class="post-card__title">Get some cool gadgets in 2023</a>
+                </div>
+                <div class="post-card">
+                    <a href="#">
+                        <img src="../img/blog-post-1.png" alt="" class="post-card__img">
+                    </a>
+                    <p class="post-card__date">feb 22, 2021 - Gadgets</p>
+                    <a href="#" class="post-card__title">Get some cool gadgets in 2023</a>
+                </div>
             </div>
-        </section>
-        <div class="blockquote">
-            <div class="blockquote__container container">
+            <div class="blockquote">
+            <div class="blockquote__container">
                 <img class="blockquote__img" src="img/quote.png" alt="#">
                 <blockquote class="blockquote__quote" cite="#">
                     <p class="blockquote__text">"Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis lorem habi tasse morbi."</p>
@@ -238,97 +220,95 @@
                     <span class="blockquote__star"></span>
                 </div>
                 <p class="blockquote__author">Emma Chamberlin</p>
-            </div>            
-        </div>
-        <div class="subscribe-form container">
-            <div class="subscribe-form__wrapper">
-                <div class="subscribe-form__text">
-                    <!-- change below -->
-                    <h3 class="subscribe-form__title">Subscribe Us now</h3>
-                    <p class="subscribe-form__subtitle">Get latest news, updates and deals directly mailed to your inbox.</p>
-                </div>
-                <form action="#" method="post">
-                    <input class="subscribe-form__input" type="email" name="email" placeholder="Your email address here" required>
-                    <button class="subscribe-form__btn" type="submit">Subscribe</button>
-                </form>
             </div>
-        </div>
-        <div class="instagram-showcase">
-            <div class="instagram-showcase__container container">
-                <h3 class="instagram-showcase__title title-h3">Shop our insta</h3>
-                <div class="instagram-showcase__items">
-                    <div class="instagram-showcase__item">
-                        <a href="" class="instagram-showcase__link">
-                            <img src="img/insta-1.png" alt="photo" class="instagram-showcase__img">
-                            <img src="icons/insta.svg" alt="icon" class="instagram-showcase__insta-icon" >
-                         </a>
+            <div class="subscribe-form">
+                    <div class="subscribe-form__wrapper">
+                    <div class="subscribe-form__text">
+                       <h3 class="subscribe-form__title">Subscribe Us now</h3>
+                       <p class="subscribe-form__subtitle">Get latest news, updates and deals directly mailed to your inbox.</p>
                     </div>
-                    <div class="instagram-showcase__item">
-                        <a href="" class="instagram-showcase__link">
-                            <img src="img/insta-2.png" alt="photo" class="instagram-showcase__img">
-                            <img src="icons/insta.svg" alt="icon" class="instagram-showcase__insta-icon" >
-                         </a>
-                    </div>        
-                    <div class="instagram-showcase__item">
-                        <a href="" class="instagram-showcase__link">
-                            <img src="img/insta-3.png" alt="photo" class="instagram-showcase__img">
-                            <img src="icons/insta.svg" alt="icon" class="instagram-showcase__insta-icon" >
-                         </a>
-                    </div>        
-                    <div class="instagram-showcase__item">
-                        <a href="" class="instagram-showcase__link">
-                            <img src="img/insta-4.png" alt="photo" class="instagram-showcase__img">
-                            <img src="icons/insta.svg" alt="icon" class="instagram-showcase__insta-icon" >
-                         </a>
-                    </div>        
-                    <div class="instagram-showcase__item">
-                        <a href="" class="instagram-showcase__link">
-                            <img src="img/insta-5.png" alt="photo" class="instagram-showcase__img">
-                            <img src="icons/insta.svg" alt="icon" class="instagram-showcase__insta-icon" >
-                         </a>
-                    </div>                            
+                        <form action="#" method="post">
+                            <input class="subscribe-form__input" type="email" name="email" placeholder="Your email address here" required>
+                            <button class="subscribe-form__btn" type="submit">Subscribe</button>
+                       </form>
+                    </div>
+                </div>
+                <div class="instagram-showcase">
+                    <div class="instagram-showcase__container">
+                        <h3 class="instagram-showcase__title title-h3">Shop our insta</h3>
+                        <div class="instagram-showcase__items">
+                            <div class="instagram-showcase__item">
+                                <a href="" class="instagram-showcase__link">
+                                    <img src="../img/insta-1.png" alt="photo" class="instagram-showcase__img">
+                                    <img src="../icons/insta.svg" alt="icon" class="instagram-showcase__insta-icon" >
+                                </a>
+                            </div>
+                            <div class="instagram-showcase__item">
+                                <a href="" class="instagram-showcase__link">
+                                    <img src="../img/insta-2.png" alt="photo" class="instagram-showcase__img">
+                                    <img src="../icons/insta.svg" alt="icon" class="instagram-showcase__insta-icon" >
+                                </a>
+                            </div>        
+                            <div class="instagram-showcase__item">
+                                <a href="" class="instagram-showcase__link">
+                                    <img src="../img/insta-3.png" alt="photo" class="instagram-showcase__img">
+                                    <img src="../icons/insta.svg" alt="icon" class="instagram-showcase__insta-icon" >
+                                </a>
+                            </div>        
+                            <div class="instagram-showcase__item">
+                                <a href="" class="instagram-showcase__link">
+                                    <img src="../img/insta-4.png" alt="photo" class="instagram-showcase__img">
+                                    <img src="../icons/insta.svg" alt="icon" class="instagram-showcase__insta-icon" >
+                                </a>
+                            </div>        
+                            <div class="instagram-showcase__item">
+                                <a href="" class="instagram-showcase__link">
+                                    <img src="../img/insta-5.png" alt="photo" class="instagram-showcase__img">
+                                    <img src="../icons/insta.svg" alt="icon" class="instagram-showcase__insta-icon" >
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
                 </div>
             </div>
-            
+            <footer class="footer">
+                    <div class="footer__socials">
+                        <a href="/"><img class="footer__logo" src="../img/MiniStore_logo.png" alt="logo"></a>
+                        <p class="footer__text">Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.</p>
+                        <div class="footer__socials-icons"></div>
+                    </div>
+                    <div class="footer-menu">
+                        <p class="footer-menu__title">Quick links</p>
+                        <ul class="footer-menu__list">
+                            <li><a class="footer-menu__link" href="#">home</a></li>
+                            <li><a class="footer-menu__link" href="#">about</a></li>
+                            <li><a class="footer-menu__link" href="#">shop</a></li>
+                            <li><a class="footer-menu__link" href="#">blogs</a></li>
+                            <li><a class="footer-menu__link" href="#">contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu">
+                        <p class="footer-menu__title">Help & Info</p>
+                        <ul class="footer-menu__list">
+                            <li><a class="footer-menu__link" href="#">track your order</a></li>
+                            <li><a class="footer-menu__link" href="#">return policies</a></li>
+                            <li><a class="footer-menu__link" href="#">shipping + delivery</a></li>
+                            <li><a class="footer-menu__link" href="#">contact us</a></li>
+                            <li><a class="footer-menu__link" href="#">faqs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu">
+                        <p class="footer-menu__title">Contact us</p>
+                        <p class="footer-menu__text">Do you have any queries or suggestions?<span class="footer-menu__text footer-menu__text--underline">yourinfo@gmail.com</span></p>
+                        <p class="footer-menu__text">If you need support? Just give us a call. <span class="footer-menu__text footer-menu__text--underline">+55 111 222 333 44</span></p>                
+                    </div>
+                    <div class="footer__bottom footer-bottom">
+                        <p class="footer-bottom__text">We ship with:</p>
+                        <p class="footer-bottom__text">Payment options:</p>
+                        <p class="footer-bottom__copyright">© Copyright 2023 MiniStore. Design by <a href="">TemplatesJungle</a></p>
+                    </div>
+            </footer>
         </div>
-        <footer class="footer">
-            <div class="footer__socials">
-                <a href="/"><img class="footer__logo" src="img/MiniStore_logo.png" alt="logo"></a>
-                <p class="footer__text">Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.</p>
-                <div class="footer__socials-icons">
-                </div>
-            </div>
-            <div class="footer-menu">
-                <p class="footer-menu__title">Quick links</p>
-                <ul class="footer-menu__list">
-                    <li><a class="footer-menu__link" href="#">home</a></li>
-                    <li><a class="footer-menu__link" href="#">about</a></li>
-                    <li><a class="footer-menu__link" href="#">shop</a></li>
-                    <li><a class="footer-menu__link" href="#">blogs</a></li>
-                    <li><a class="footer-menu__link" href="#">contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-menu">
-                <p class="footer-menu__title">Help & Info</p>
-                <ul class="footer-menu__list">
-                    <li><a class="footer-menu__link" href="#">track your order</a></li>
-                    <li><a class="footer-menu__link" href="#">return policies</a></li>
-                    <li><a class="footer-menu__link" href="#">shipping + delivery</a></li>
-                    <li><a class="footer-menu__link" href="#">contact us</a></li>
-                    <li><a class="footer-menu__link" href="#">faqs</a></li>
-                </ul>
-            </div>
-            <div class="footer-menu">
-                <p class="footer-menu__title">Contact us</p>
-                <p class="footer-menu__text">Do you have any queries or suggestions?<span class="footer-menu__text footer-menu__text--underline">yourinfo@gmail.com</span></p>
-                <p class="footer-menu__text">If you need support? Just give us a call. <span class="footer-menu__text footer-menu__text--underline">+55 111 222 333 44</span></p>                
-            </div>
-            <div class="footer__bottom footer-bottom">
-                <p class="footer-bottom__text">We ship with:</p>
-                <p class="footer-bottom__text">Payment options:</p>
-                <p class="footer-bottom__copyright">© Copyright 2023 MiniStore. Design by <a href="">TemplatesJungle</a></p>
-            </div>
-        </footer>
     </main>
 </body>
 </html>

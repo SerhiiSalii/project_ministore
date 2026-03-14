@@ -1,0 +1,25 @@
+.post-card {
+    &__img {
+        margin-bottom: 1.4rem;
+    }
+    &__date{
+        font-size: 1.3rem;
+        color: $color-gray-medium;
+        text-transform: uppercase;
+        letter-spacing: 6%;
+        margin-bottom: 0.6rem;}
+    &__title {
+        &:link,
+        &:visited {
+            font-size: 2rem;
+            letter-spacing: 6%;
+            text-decoration: none;
+            color: $color-black;
+            text-transform: uppercase;
+        }
+        
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

@@ -13,6 +13,6 @@
     }
     
     &:active {
-        display: none;
+        transform: translateY(.5rem);
     }
 }
